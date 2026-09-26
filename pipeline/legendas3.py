@@ -65,6 +65,40 @@ Trilha de fundo criada com IA no Google Flow Music.
 Salva pra acompanhar esse debate.
 
 #terrasraras #minasgerais #partidomissao #uberlandia""",
+
+"19_vinheta_missao": """MISSÃO! EU VOTO 14!
+
+Treze segundos da Praça Rui Barbosa, em Uberlândia, na noite de 25 de setembro. Os dois gritos são do público, gravados no meio da multidão, com o som original, sem trilha por cima.
+
+Aviso: o olho da onça em chamas e a onça atravessando a fumaça são vinhetas geradas por IA no Google Flow e aparecem marcadas na tela. O som, a praça e o coro são reais.
+
+Salva e manda pra quem estava lá com você.
+
+📍 Praça Rui Barbosa, Uberlândia
+
+#partidomissao #uberlandia #eleicoes2026 #missao14""",
+"20_fora_ladroes": """MISSÃO! FORA LADRÕES! FORA CORRUPÇÃO!
+
+Trinta e três segundos com a faixa “MISSÃO: FORA LADRÕES”, um rap-rock criado com IA no Google Flow Music, montado na batida com as imagens reais do ato de 25 de setembro na Praça Rui Barbosa, em Uberlândia.
+
+Aviso: a música, com letra, voz e coro, é gerada por IA; o coro é da música, não do público. O olho da onça, a onça na fumaça, a fumaça rosa e a bandeira sob a lua são vinhetas geradas por IA no Google Flow e aparecem marcadas na tela. As cenas da praça são reais.
+
+Aumenta o som e manda pra quem cansou de corrupção.
+
+📍 Uberlândia, MG
+
+#partidomissao #rapnacional #uberlandia #eleicoes2026""",
+"21_o_ato_em_1_minuto": """O ato de Uberlândia em um minuto.
+
+As falas e os coros são reais, da noite de 25 de setembro na Praça Rui Barbosa: “Minas Gerais, o estado mais politizado do Brasil”, “Missão!”, o editorial que diz que o Brasil está virando as costas para o futuro, “Quantos deles apoiaram? Nenhum!”, “Eu voto 14!”, as terras raras, “Globo, chama o Renan!” e “É 14 ou nada!”.
+
+Aviso: a trilha instrumental foi criada com IA no Google Flow Music, e o olho da onça, a onça na fumaça e os cristais de terras raras são vinhetas geradas por IA no Google Flow, marcadas na tela. Todas as falas e coros são gravação real.
+
+Salva e manda pra quem não viu o ato.
+
+📍 Praça Rui Barbosa, Uberlândia
+
+#uberlandia #partidomissao #renansantos #eleicoes2026""",
 }
 
 if __name__ == "__main__":
@@ -73,7 +107,7 @@ if __name__ == "__main__":
         assert len(v) >= 500, (k, len(v))
         assert 3 <= len(tags) <= 5, (k, tags)
         assert "—" not in v and "–" not in v, k
-        if k.startswith(("16", "17", "18")):
+        if k.startswith(("16", "17", "18", "19", "20", "21")):
             assert "IA" in v, k
         print(f"{k}: {len(v)} caracteres, {len(tags)} hashtags")
     here = os.path.dirname(os.path.abspath(__file__))

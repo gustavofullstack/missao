@@ -17,7 +17,10 @@ Sobre o editorial citado no palanque: a The Economist publicou em 24/09/2026 "Br
 2. **IA sempre rotulada** (TSE, Res. 23.610/2019, art. 9º-B): música criada com IA e vinhetas geradas por IA levam rótulo fixo na tela durante o vídeo inteiro, selo nos planos sintéticos e aviso por escrito na legenda do post.
 3. **Nada de deepfake**: nenhuma imagem, voz ou vídeo sintético de pessoa real. Vinhetas de IA são simbólicas (onça, bandeira, terras raras, drones) e nunca simulam multidão.
 4. **Coro sintético não é coro do público**: quando a música de IA tem coro, a legenda do post diz que o coro é da música.
-5. **Evidência antes de promessa**: duração, loudness e frames de cada saída são medidos (`ffprobe`, `loudnorm`) antes de entregar.
+5. **Candidato fora da voz sintética**: durante música de IA com voz, nenhum plano do candidato em destaque (a letra pareceria fala dele);
+   e nada de “FORA…” (texto ou coro) sobre close de bandeira com o rosto ou o nome dele — um print vira “Fora <candidato>”.
+   O filtro `seguro()` em `build_v3.py` aplica as duas regras a partir de folhas de contato conferidas.
+6. **Evidência antes de promessa**: duração, loudness e frames de cada saída são medidos (`ffprobe`, `loudnorm`) antes de entregar.
 
 ## Arquitetura
 
@@ -39,9 +42,11 @@ pipeline/letra.py       tempos por palavra do vocal de uma música (para o texto
 pipeline/beats.py       andamento e grade de batidas (autocorrelação + programação dinâmica)
 pipeline/legendas*.py   legendas dos posts com travas (≥ 500 caracteres, 3–5 hashtags, sem travessão, aviso de IA)
 pipeline/upload.sh      cópia ≤ 9,5 MB em 2 passes para envio pelo navegador
+pipeline/capas3.py      capas: fundo gerado (Nano Banana Pro) + título na fonte da marca + selo de IA
+pipeline/kit_postagem.py kit por peça: legenda, texto do X (≤ 280), título do Shorts (≤ 100), horário, com travas
 ```
 
-## Catálogo (26/09/2026)
+## Catálogo (26/09/2026) — 21 peças
 
 | # | Peça | Duração | Observação |
 |---|---|---|---|
@@ -57,6 +62,9 @@ pipeline/upload.sh      cópia ≤ 9,5 MB em 2 passes para envio pelo navegador
 | 16 | Mercadores da Miséria (clipe) | 2 min 48 s | rap criado com IA + imagens reais + vinhetas de IA, tudo rotulado |
 | 17 | A rua tá gritando | 33 s | fala + refrão do rap de IA + vinhetas de IA, rotulados |
 | 18 | Terras raras com IA | 42 s | fala do 11 ilustrada com vinhetas de IA nas palavras-chave |
+| 19 | Vinheta: MISSÃO! EU VOTO 14! | 13 s | coro real da praça + vinhetas de IA |
+| 20 | Missão! Fora ladrões! | 33 s | rap-rock criado com IA + imagens reais + vinhetas, rotulados |
+| 21 | O ato em 1 minuto | 55 s | só falas e coros reais, trilha instrumental de IA por baixo |
 
 ## Como rodar
 

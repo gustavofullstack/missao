@@ -122,6 +122,61 @@ def gritos(off, pares):
     return [grito(t, a + off, b + off, size=118 if len(t) <= 8 else 96) for t, a, b in pares]
 
 
+# Durante a música de IA não entra plano com o candidato em destaque: a voz sintética do rap não pode parecer
+# dele (TSE, art. 9-B/9-C). Folhas de contato conferidas: estes trechos são de multidão, bandeira ou sinalizador.
+SEGURO = [("IMG_8457", 13.0, 62.0, 120, "noite"), ("IMG_8441", 0.5, 33.5, 60, "fogo"),
+          ("IMG_8449", 1.0, 190.0, 120, "noite_clara"), ("IMG_8443", 0.5, 36.5, 120, "fogo_quente"),
+          ("IMG_8450", 0.5, 35.5, 120, "noite"), ("IMG_8453", 0.5, 63.0, 100, "noite"),
+          ("IMG_8445", 22.0, 58.5, 120, "noite"), ("IMG_8461", 0.5, 21.5, 120, "noite"),
+          ("IMG_8455", 7.0, 88.0, 100, "noite")]
+FALA = {"IMG_8460", "IMG_8459", "IMG_8472", "IMG_8463", "IMG_8464", "IMG_8465", "IMG_8468", "IMG_8452"}
+# closes de bandeira com rosto/nome do candidato: com "FORA…" na tela ou no áudio viram "Fora Renan" num print
+BANDEIRA_DELE = {"IMG_8444", "IMG_8470"}
+
+
+def inseguro(sh):
+    src, a = sh["src"], sh.get("in", 0)
+    return (src in FALA or src in BANDEIRA_DELE or (src == "IMG_8446" and a >= 7.5) or (src == "IMG_8445" and a < 21)
+            or (src == "IMG_8453" and a >= 64) or (src == "IMG_8455" and (a < 7 or a >= 88)))
+
+
+def seguro(lista, usados=None):
+    """Troca planos inseguros por trechos do banco SEGURO, alternando fontes e sem repetir trecho (3 s)."""
+    usados = usados if usados is not None else {}
+    for sh in lista:
+        if not sh["src"].startswith("IA_") and not inseguro(sh):
+            usados.setdefault(sh["src"], []).append(sh["in"])
+    k, out = 0, []
+    for sh in lista:
+        if sh["src"].startswith("IA_") or not inseguro(sh):
+            out.append(sh)
+            continue
+        for tent in range(len(SEGURO) * 20):
+            src, a0, a1, fps, grade = SEGURO[(k + tent) % len(SEGURO)]
+            sp = sh.get("speed", 1) if fps >= 120 or (fps >= 100 and sh.get("speed", 1) >= 0.3) or (fps >= 60 and sh.get("speed", 1) >= 0.5) else 1
+            cand = a0 + ((k * 7.3 + tent * 4.1) % max(a1 - a0 - sh["dur"] * sp, 0.1))
+            if all(abs(cand - u) >= 3 for u in usados.get(src, [])):
+                novo = {"src": src, "in": round(cand, 2), "dur": sh["dur"], "speed": sp, "grade": grade}
+                if sh.get("flash"):
+                    novo["flash"] = True
+                usados.setdefault(src, []).append(novo["in"])
+                out.append(novo)
+                k += 1
+                break
+        else:
+            raise SystemExit(f"sem substituto para {sh}")
+    return out
+
+
+def selos_ia(lista, t0):
+    t, sel = t0, []
+    for sh in lista:
+        if sh["src"].startswith("IA_"):
+            sel.append(selo_img(t, t + sh["dur"]))
+        t += sh["dur"]
+    return sel
+
+
 # 17 — "A rua tá gritando": pausa dramática do "Nenhum!" preenchida pelo olho da onça (IA), depois o coro
 M0 = 113.25             # entrada da música (início de "A rua tá gritando" menos a antecipação)
 F17 = 4.8               # fim da fala no reel
@@ -130,7 +185,7 @@ r17 = [limpa(x) for x in PL["reel"]]
 r17[4] = ia("IA_onca_fumaca", 2.2, r17[4]["dur"])           # 5º plano do coro: a onça atravessa a fumaça
 r17[8] = ia("IA_bandeira_lua", 1.5, r17[8]["dur"], 0.8)     # bandeira amarela e preta sob a lua
 r17[-1]["dur"] = round(r17[-1]["dur"] + 2.0, 3)             # espaço do card final
-t_ia = [F17 + sum(x["dur"] for x in r17[:4]), F17 + sum(x["dur"] for x in r17[:8])]
+r17 = seguro(r17)
 tx17 = legenda(palavras(V4, "IMG_8464", 88.3, 89.6), lambda t: t - 88.1, stop=1.75)
 tx17 += [grito("NENHUM!", 92.1 - 88.1, F17 - 0.02)]
 tx17 += [grito("A RUA TÁ GRITANDO", 113.38 + off17, 116.28 + off17, size=92)]
@@ -144,8 +199,7 @@ E.append({"name": "17_a_rua_ta_gritando", "cover": 9.0, "film": True,
           "shots": [dict(src="IMG_8464", **{"in": 88.1, "dur": 1.7}, **spk),
                     ia("IA_olho_onca", 4.2, 2.2),
                     dict(src="IMG_8464", **{"in": 92.0, "dur": 0.9, "flash": True}, **close)] + r17,
-          "overlays": [selo_img(1.7, 3.9), selo_img(t_ia[0], t_ia[0] + r17[4]["dur"]),
-                       selo_img(t_ia[1], t_ia[1] + r17[8]["dur"]),
+          "overlays": [selo_img(1.7, 3.9)] + selos_ia(r17, F17) + [
                        {"png": "titles/marca_selo_ia.png", "start": F17, "end": F17 + 4.0, "y": 1720},
                        {"png": "titles/marca_bandeira.png", "start": round(116.80 + off17, 2),
                         "end": round(117.36 + off17, 2), "y": 0, "slam": True, "fade_in": 0.02, "fade_out": 0.05},
@@ -172,6 +226,7 @@ def troca(tm, novo):
 
 ins = [troca(0.2, ia("IA_olho_onca", 5.8, 1)), troca(118.0, ia("IA_onca_fumaca", 1.0, 1)),
        troca(150.0, ia("IA_bandeira_lua", 0.5, 1, 0.8)), troca(95.0, ia("IA_onca_fumaca", 6.0, 1))]
+c16 = seguro(c16)
 tx16 = legenda(palavras(V4, "IMG_8455", 0.0, 5.3, {"Estado": ("estado", 0, 6)}), lambda t: t, stop=A16)
 tx16 += gritos(A16, [("MISSÃO!", 2.22, 2.78), ("FORA LADRÕES!", 3.88, 5.14), ("FORA CORRUPÇÃO!", 6.52, 8.12),
                      ("FORA LADRÕES!", 71.5, 72.5), ("FORA CORRUPÇÃO!", 72.5, 73.6),
@@ -189,7 +244,7 @@ E.append({"name": "16_mercadores_da_miseria_clipe", "cover": 14.5, "film": True,
                        {"png": "titles/marca_bandeira.png", "start": round(m16(1.64), 2), "end": round(m16(2.20), 2),
                         "y": 0, "slam": True, "fade_in": 0.02, "fade_out": 0.05},
                        {"png": "titles/marca_fim.png", "start": round(dur16 - 5.0, 2), "y": 0, "fade_in": 0.5}]
-                      + [selo_img(a, a + d) for a, d in ins],
+                      + selos_ia(c16, A16),
           "audio": [{"src": "IMG_8455", "in": 0.0, "dur": A16 + 0.1, "voz": True, "gain": 4},
                     {"src": "MUS_mercadores_da_miseria", "in": 0.0, "gain": -2}], "xfade": 0.1,
           "texts": tx16})
@@ -221,9 +276,108 @@ E.append({"name": "18_terras_raras_com_ia", "cover": 7.0, "film": True,
           "musica": {"src": "MUS_futuro_soberano_mpb_rock", "in": 20.0, "gain": -22},
           "texts": tx18})
 
+# 19 — vinheta: olho da onça (IA) abre, bandeira no primeiro "MISSÃO!" real, "EU VOTO 14!" real; áudio 100% da praça
+sh19 = [ia("IA_olho_onca", 4.8, 2.5),
+        {"src": "IMG_8453", "in": 17.5, "dur": 2.0, "flash": True},
+        ia("IA_onca_fumaca", 2.0, 1.1),
+        {"src": "IMG_8453", "in": 20.6, "dur": 1.0},
+        {"src": "IMG_8445", "in": 29.0, "dur": 4.7, "flash": True},
+        {"src": "IMG_8449", "in": 60.0, "dur": 2.0, "grade": "noite_clara"}]
+E.append({"name": "19_vinheta_missao", "cover": 3.0, "film": True, "shots": sh19,
+          "overlays": selos_ia(sh19, 0.0) + [
+              {"png": "titles/marca_bandeira.png", "start": 2.5, "end": 3.06, "y": 0, "slam": True, "fade_in": 0.02, "fade_out": 0.05},
+              {"png": "titles/marca_fim_vinhetas.png", "start": 11.3, "y": 0, "fade_in": 0.25}],
+          "audio": [{"src": "IMG_8453", "in": 15.0, "dur": 6.6 + 0.1}, {"src": "IMG_8445", "in": 29.0}], "xfade": 0.1,
+          "texts": [grito("MISSÃO!", 3.1, 6.5, size=130), grito("EU VOTO 14!", 6.75, 11.2, size=118)]})
+
+# 20 — "Fora ladrões": abertura da faixa MISSÃO: FORA LADRÕES (Flow Music) + refrão final emendado na batida
+A20, B0, B1 = 9.9, 136.51, 159.31          # trecho A: 0–9,9 da música; trecho B: 136,51–159,31 (batida forte)
+m20 = lambda t: t if t < 20 else A20 + (t - B0)
+PH = lambda d, sp=1: {"src": "IMG_8464", "in": 0, "dur": round(d, 3), "speed": sp}   # vaga: seguro() preenche
+beat = 0.576
+sh20 = ([ia("IA_olho_onca", 5.0, 2.08)] + [PH(0.76), PH(0.76), PH(0.58)] + [ia("IA_onca_fumaca", 1.5, 1.92)]
+        + [PH(2.28, 0.5), PH(1.52)]                                            # "A rua acordou!" / "Fora! Fora!"
+        + [PH(2 * beat)] * 4 + [ia("IA_fumaca", 2.0, 2 * beat)] + [PH(2 * beat)] * 4
+        + [ia("IA_bandeira_lua", 1.0, 4 * beat, 0.8)] + [PH(2 * beat)] * 4 + [PH(4 * beat, 0.5)])
+falta = (A20 + (B1 - B0)) - sum(x["dur"] for x in sh20)
+sh20.append(PH(round(falta, 3), 0.5))                                         # último plano fecha a conta (card final)
+sh20 = seguro([dict(x) for x in sh20])
+sh20[7]["flash"] = True                                                       # entrada do refrão
+tx20 = [grito("MISSÃO!", 2.08, 2.84, size=130), grito("MISSÃO!", 2.84, 3.60, size=130),
+        grito("MISSÃO!", 3.60, 4.18, size=130), grito("MISSÃO!", 4.18, 5.4, size=130),
+        grito("A RUA ACORDOU!", 6.10, 8.38, size=104), grito("FORA! FORA!", 8.38, A20, size=118)]
+tx20 += gritos(A20 - B0, [("FORA! FORA! FORA!", 136.92, 138.36), ("MISSÃO! MISSÃO!", 138.36, 140.94),
+                          ("FORA LADRÕES!", 140.94, 142.64), ("FORA CORRUPÇÃO!", 142.64, 143.52),
+                          ("MISSÃO! MISSÃO!", 143.52, 145.56), ("FORA! FORA!", 148.60, 150.14)])
+rev = grito("A RUA É A NOSSA", A20 + 145.56 - B0, A20 + 148.60 - B0, y=1060, size=92)
+rev["lines"] = ["A RUA É A NOSSA", "REVOLUÇÃO!"]                              # verso inteiro, em duas linhas
+tx20.append(rev)
+dur20 = sum(x["dur"] for x in sh20)
+E.append({"name": "20_fora_ladroes", "cover": 15.0, "film": True, "shots": sh20,
+          "overlays": selos_ia(sh20, 0.0) + [
+              {"png": "titles/marca_selo_ia.png", "start": 0.0, "end": 5.0, "y": 1720},
+              {"png": "titles/marca_bandeira.png", "start": 2.08, "end": 2.64, "y": 0, "slam": True, "fade_in": 0.02, "fade_out": 0.05},
+              {"png": "titles/marca_fim.png", "start": round(dur20 - 2.0, 2), "y": 0, "fade_in": 0.3}],
+          "audio": [{"src": "MUS_missao_fora_ladroes", "in": 0.0, "dur": A20 + 0.08},
+                    {"src": "MUS_missao_fora_ladroes", "in": B0}], "xfade": 0.08,
+          "texts": tx20})
+
+# 21 — "O ato em 1 minuto": só falas e coros REAIS, trilha instrumental de IA por baixo (sem voz sintética)
+XF = 0.1
+SEG = [("IMG_8453", 15.5, 2.0, False), ("IMG_8455", 0.0, 5.35, True), ("IMG_8453", 17.5, 4.1, False),
+       ("IMG_8463", 3.8, 4.5, True), ("IMG_8464", 88.1, 4.8, True), ("IMG_8445", 29.0, 4.7, False),
+       ("IMG_8465", 51.5, 8.7, True), ("IMG_8460", 0.0, 4.0, False), ("IMG_8457", 0.5, 8.1, True),
+       ("IMG_8457", 19.0, 4.0, False), ("IMG_8457", 23.0, 5.15, False)]
+T21 = [0.0]
+for _, _, d, _ in SEG:
+    T21.append(round(T21[-1] + d, 3))
+aud21 = [{"src": s_, "in": a_, "dur": round(d_ + XF, 3), "voz": v_} for s_, a_, d_, v_ in SEG[:-1]]
+aud21.append({"src": SEG[-1][0], "in": SEG[-1][1]})
+spk63 = {"zoom": [1.35, 1.35], "focus": [0.48, 0.42]}
+sh21 = [ia("IA_olho_onca", 5.0, 2.0),
+        {"src": "IMG_8455", "in": 0.0, "dur": 5.35},
+        {"src": "IMG_8453", "in": 17.5, "dur": 4.1, "flash": True},
+        dict(src="IMG_8463", **{"in": 3.8, "dur": 4.5}, **spk63),
+        dict(src="IMG_8464", **{"in": 88.1, "dur": 1.7}, **spk), {"src": "IMG_8449", "in": 75.0, "dur": 2.2, "grade": "noite_clara"},
+        dict(src="IMG_8464", **{"in": 92.0, "dur": 0.9, "flash": True}, **close),
+        {"src": "IMG_8445", "in": 29.0, "dur": 4.7, "flash": True},
+        S11(51.5, 5.2), ia("IA_terras_raras", 0.4, 3.5),
+        {"src": "IMG_8460", "in": 0.0, "dur": 4.0},
+        {"src": "IMG_8457", "in": 0.5, "dur": 8.1, "zoom": [1.35, 1.35], "focus": [0.5, 0.5]},
+        {"src": "IMG_8457", "in": 19.0, "dur": 4.0, "flash": True},
+        ia("IA_onca_fumaca", 1.0, 2.6), {"src": "IMG_8449", "in": 120.0, "dur": 2.55, "grade": "noite_clara"}]
+assert abs(sum(x["dur"] for x in sh21) - T21[-1]) < 0.01, (sum(x["dur"] for x in sh21), T21[-1])
+tx21 = legenda(palavras(V4, "IMG_8455", 0.0, 5.3, {"Estado": ("estado", 0, 6)}), lambda t: T21[1] + t, stop=T21[2])
+tx21 += [grito("MISSÃO!", T21[2] + 0.15, T21[3] - 0.1, size=130)]
+tx21 += legenda(palavras(b2.V3, "IMG_8463", 3.8, 8.3, fix15), lambda t: T21[3] + (t - 3.8), stop=T21[4])
+tx21 += legenda(palavras(V4, "IMG_8464", 88.3, 89.6), lambda t: T21[4] + (t - 88.1), stop=T21[4] + 1.75)
+tx21 += [grito("NENHUM!", T21[4] + 4.0, T21[5] - 0.02)]
+tx21 += [grito("EU VOTO 14!", T21[5] + 0.15, T21[6] - 0.1, size=118)]
+tx21 += [dict(t, start=round(t["start"] + T21[6], 3), end=round(min(t["end"], 8.7) + T21[6], 3), color=AMARELO)
+         for t in e11["texts"] if t["start"] < 8.6]
+tx21 += [grito("GLOBO, CHAMA O RENAN!", T21[7] + 0.0, T21[7] + 2.35, size=92),
+         grito("GLOBO, CHAMA O RENAN!", T21[7] + 2.42, T21[8] - 0.05, size=92)]
+e08 = json.load(open(f"{HERE}/edl2/08_e_14_ou_nada.json"))
+tx21 += [dict(t, start=round(t["start"] + T21[8], 3), end=round(min(t["end"], 8.1) + T21[8], 3),
+              color=(AMARELO if t.get("color") != "black" else t["color"]))
+         for t in e08["texts"] if t["start"] < 8.0]
+tx21 += [grito("14 OU NADA!", T21[9] + 0.15, T21[10] - 0.1, size=118)]
+dur21 = T21[-1]
+E.append({"name": "21_o_ato_em_1_minuto", "cover": 19.8, "film": True, "shots": sh21,
+          "overlays": selos_ia(sh21, 0.0) + [
+              {"png": "titles/21.png", "start": 2.0, "end": 11.4, "y": 200},
+              {"png": "titles/marca_mapa.png", "start": 2.3, "end": T21[2], "y": 520},
+              {"png": "titles/marca_bandeira.png", "start": T21[2], "end": round(T21[2] + 0.56, 2), "y": 0, "slam": True,
+               "fade_in": 0.02, "fade_out": 0.05},
+              {"png": "titles/marca_fim.png", "start": round(dur21 - 2.55, 2), "y": 0, "fade_in": 0.3}],
+          "audio": aud21, "xfade": XF,
+          "musica": {"src": "MUS_energia_de_luta_rap_rock", "in": 10.0, "gain": -19},
+          "texts": tx21})
+
 os.makedirs(f"{HERE}/edl3", exist_ok=True)
 ROTULO = {"14": "marca_ia_musica", "15": "marca_ia_musica", "16": "marca_ia_total", "17": "marca_ia_total",
-          "18": "marca_ia_total"}
+          "18": "marca_ia_total", "19": "marca_ia_vinhetas", "20": "marca_ia_total",
+          "21": "marca_ia_trilha_vinhetas"}
 for e in E:
     e["overlays"].append({"png": f"titles/{ROTULO[e['name'][:2]]}.png", "start": 0, "y": 112, "fade_in": 0.2})
     T = sorted(e["texts"], key=lambda t: t["start"])

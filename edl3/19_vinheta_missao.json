@@ -1,0 +1,134 @@
+{
+ "name": "19_vinheta_missao",
+ "cover": 3.0,
+ "film": true,
+ "shots": [
+  {
+   "src": "IA_olho_onca",
+   "in": 4.8,
+   "dur": 2.5,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8453",
+   "in": 17.5,
+   "dur": 2.0,
+   "flash": true
+  },
+  {
+   "src": "IA_onca_fumaca",
+   "in": 2.0,
+   "dur": 1.1,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8453",
+   "in": 20.6,
+   "dur": 1.0
+  },
+  {
+   "src": "IMG_8445",
+   "in": 29.0,
+   "dur": 4.7,
+   "flash": true
+  },
+  {
+   "src": "IMG_8449",
+   "in": 60.0,
+   "dur": 2.0,
+   "grade": "noite_clara"
+  }
+ ],
+ "overlays": [
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 0.0,
+   "end": 2.5,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 4.5,
+   "end": 5.6,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_bandeira.png",
+   "start": 2.5,
+   "end": 3.06,
+   "y": 0,
+   "slam": true,
+   "fade_in": 0.02,
+   "fade_out": 0.05
+  },
+  {
+   "png": "titles/marca_fim_vinhetas.png",
+   "start": 11.3,
+   "y": 0,
+   "fade_in": 0.25
+  },
+  {
+   "png": "titles/marca_ia_vinhetas.png",
+   "start": 0,
+   "y": 112,
+   "fade_in": 0.2
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8453",
+   "in": 15.0,
+   "dur": 6.699999999999999
+  },
+  {
+   "src": "IMG_8445",
+   "in": 29.0
+  }
+ ],
+ "xfade": 0.1,
+ "texts": [
+  {
+   "lines": [
+    "MISSÃO!"
+   ],
+   "start": 3.1,
+   "end": 6.5,
+   "y": 1120,
+   "size": 130,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "EU VOTO 14!"
+   ],
+   "start": 6.75,
+   "end": 11.2,
+   "y": 1120,
+   "size": 118,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  }
+ ],
+ "crf": 20
+}

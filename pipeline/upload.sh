@@ -7,7 +7,7 @@ mkdir -p upload
 for f in "$@"; do
   n=$(basename "$f" .mp4); out="upload/$n.mp4"
   dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f")
-  tam=$(stat -f %z "$f")
+  tam=$(wc -c < "$f" | tr -d " ")
   if [ "$tam" -le "$ALVO" ]; then cp "$f" "$out"; echo "$n: já cabe ($tam bytes), copiado"; continue; fi
   # kbps de vídeo = orçamento total - áudio (192k) - 2% de contêiner
   vk=$(python3 -c "print(int(($ALVO*8/$dur/1000 - 192) * 0.98))")
@@ -19,5 +19,5 @@ for f in "$@"; do
     -pass 2 -passlogfile "$log" -profile:v high -pix_fmt yuv420p \
     -color_primaries bt709 -color_trc bt709 -colorspace bt709 -c:a copy -movflags +faststart "$out"
   rm -f "$log"*
-  echo "$n: ${dur}s  ${vk}k  $(stat -f %z "$out") bytes ${pre:+(hqdn3d)}"
+  echo "$n: ${dur}s  ${vk}k  $(wc -c < "$out" | tr -d " ") bytes ${pre:+(hqdn3d)}"
 done

@@ -31,10 +31,11 @@
    "grade": "fogo"
   },
   {
-   "src": "IMG_8446",
-   "in": 40.0,
+   "src": "IMG_8457",
+   "in": 13.0,
    "dur": 1.344,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
    "src": "IMG_8450",
@@ -43,10 +44,11 @@
    "speed": 1
   },
   {
-   "src": "IMG_8470",
-   "in": 6.0,
+   "src": "IMG_8449",
+   "in": 12.4,
    "dur": 1.344,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite_clara"
   },
   {
    "src": "IMG_8449",
@@ -56,10 +58,11 @@
    "grade": "noite_clara"
   },
   {
-   "src": "IMG_8463",
-   "in": 2.0,
+   "src": "IMG_8449",
+   "in": 15.6,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite_clara"
   },
   {
    "src": "IMG_8457",
@@ -68,10 +71,11 @@
    "speed": 0.6
   },
   {
-   "src": "IMG_8444",
-   "in": 6.0,
+   "src": "IMG_8443",
+   "in": 22.4,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "fogo_quente"
   },
   {
    "src": "IMG_8461",
@@ -80,40 +84,46 @@
    "speed": 0.5
   },
   {
-   "src": "IMG_8472",
-   "in": 2.0,
+   "src": "IMG_8445",
+   "in": 25.59,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8470",
-   "in": 20.0,
+   "src": "IMG_8453",
+   "in": 37.0,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8460",
-   "in": 20.0,
+   "src": "IMG_8445",
+   "in": 31.99,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8446",
-   "in": 44.0,
+   "src": "IMG_8457",
+   "in": 24.64,
    "dur": 1.344,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8459",
-   "in": 0.5,
+   "src": "IMG_8455",
+   "in": 65.4,
    "dur": 1.344,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8472",
-   "in": 14.0,
+   "src": "IMG_8441",
+   "in": 9.68,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "fogo"
   },
   {
    "src": "IMG_8441",
@@ -123,24 +133,18 @@
    "grade": "fogo_quente"
   },
   {
-   "src": "IMG_8444",
-   "in": 14.0,
-   "dur": 2.688,
-   "speed": 1
-  },
-  {
-   "src": "IMG_8465",
-   "in": 60.0,
+   "src": "IMG_8441",
+   "in": 12.88,
    "dur": 2.688,
    "speed": 1,
-   "zoom": [
-    1.4,
-    1.4
-   ],
-   "focus": [
-    0.48,
-    0.47
-   ]
+   "grade": "fogo"
+  },
+  {
+   "src": "IMG_8449",
+   "in": 81.3,
+   "dur": 2.688,
+   "speed": 1,
+   "grade": "noite_clara"
   },
   {
    "src": "IMG_8450",
@@ -155,18 +159,11 @@
    "speed": 0.5
   },
   {
-   "src": "IMG_8468",
-   "in": 20.0,
+   "src": "IMG_8445",
+   "in": 54.28,
    "dur": 2.688,
    "speed": 1,
-   "zoom": [
-    1.45,
-    1.45
-   ],
-   "focus": [
-    0.55,
-    0.5
-   ]
+   "grade": "noite"
   },
   {
    "src": "IMG_8443",
@@ -182,24 +179,18 @@
    "speed": 0.6
   },
   {
-   "src": "IMG_8470",
-   "in": 28.0,
+   "src": "IMG_8455",
+   "in": 39.99,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8464",
-   "in": 40.0,
+   "src": "IMG_8453",
+   "in": 43.56,
    "dur": 3.36,
    "speed": 1,
-   "zoom": [
-    1.4,
-    1.4
-   ],
-   "focus": [
-    0.5,
-    0.45
-   ]
+   "grade": "noite"
   },
   {
    "src": "IMG_8455",
@@ -208,10 +199,11 @@
    "speed": 1
   },
   {
-   "src": "IMG_8446",
-   "in": 60.0,
+   "src": "IMG_8455",
+   "in": 45.38,
    "dur": 3.36,
-   "speed": 0.5
+   "speed": 0.5,
+   "grade": "noite"
   },
   {
    "src": "IMG_8441",
@@ -222,16 +214,18 @@
    "flash": true
   },
   {
-   "src": "IMG_8472",
-   "in": 30.0,
+   "src": "IMG_8455",
+   "in": 49.59,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8444",
-   "in": 20.0,
+   "src": "IMG_8449",
+   "in": 137.4,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite_clara"
   },
   {
    "src": "IMG_8450",
@@ -240,18 +234,11 @@
    "speed": 1
   },
   {
-   "src": "IMG_8465",
-   "in": 80.0,
+   "src": "IMG_8449",
+   "in": 140.6,
    "dur": 2.688,
    "speed": 1,
-   "zoom": [
-    1.4,
-    1.4
-   ],
-   "focus": [
-    0.48,
-    0.47
-   ]
+   "grade": "noite_clara"
   },
   {
    "src": "IMG_8443",
@@ -267,18 +254,11 @@
    "speed": 1
   },
   {
-   "src": "IMG_8468",
-   "in": 30.0,
+   "src": "IMG_8449",
+   "in": 143.8,
    "dur": 2.688,
    "speed": 1,
-   "zoom": [
-    1.45,
-    1.45
-   ],
-   "focus": [
-    0.55,
-    0.5
-   ]
+   "grade": "noite_clara"
   },
   {
    "src": "IA_onca_fumaca",
@@ -288,30 +268,25 @@
    "grade": "neutro"
   },
   {
-   "src": "IMG_8470",
-   "in": 14.0,
+   "src": "IMG_8449",
+   "in": 147.0,
    "dur": 2.688,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite_clara"
   },
   {
-   "src": "IMG_8446",
-   "in": 16.0,
+   "src": "IMG_8443",
+   "in": 17.86,
    "dur": 2.016,
-   "speed": 1
+   "speed": 1,
+   "grade": "fogo_quente"
   },
   {
-   "src": "IMG_8464",
-   "in": 76.0,
+   "src": "IMG_8450",
+   "in": 2.9,
    "dur": 3.36,
    "speed": 1,
-   "zoom": [
-    1.4,
-    1.4
-   ],
-   "focus": [
-    0.5,
-    0.45
-   ]
+   "grade": "noite"
   },
   {
    "src": "IMG_8455",
@@ -320,24 +295,18 @@
    "speed": 0.6
   },
   {
-   "src": "IMG_8460",
-   "in": 45.0,
+   "src": "IMG_8453",
+   "in": 46.76,
    "dur": 3.36,
-   "speed": 0.5
+   "speed": 0.5,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8468",
-   "in": 35.0,
+   "src": "IMG_8455",
+   "in": 33.78,
    "dur": 2.688,
    "speed": 1,
-   "zoom": [
-    1.45,
-    1.45
-   ],
-   "focus": [
-    0.55,
-    0.5
-   ]
+   "grade": "noite"
   },
   {
    "src": "IMG_8450",
@@ -366,56 +335,46 @@
    "speed": 1
   },
   {
-   "src": "IMG_8468",
-   "in": 2.0,
+   "src": "IMG_8453",
+   "in": 28.23,
    "dur": 1.344,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8470",
-   "in": 1.0,
+   "src": "IMG_8457",
+   "in": 16.28,
    "dur": 1.344,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8472",
-   "in": 6.0,
+   "src": "IMG_8457",
+   "in": 19.48,
    "dur": 1.344,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
-   "src": "IMG_8446",
-   "in": 8.0,
+   "src": "IMG_8443",
+   "in": 5.16,
    "dur": 1.344,
-   "speed": 1
+   "speed": 1,
+   "grade": "fogo_quente"
   },
   {
-   "src": "IMG_8464",
-   "in": 100.0,
+   "src": "IMG_8445",
+   "in": 51.26,
    "dur": 3.36,
    "speed": 1,
-   "zoom": [
-    1.4,
-    1.4
-   ],
-   "focus": [
-    0.5,
-    0.45
-   ]
+   "grade": "noite"
   },
   {
-   "src": "IMG_8465",
-   "in": 90.0,
+   "src": "IMG_8455",
+   "in": 11.56,
    "dur": 2.688,
    "speed": 1,
-   "zoom": [
-    1.4,
-    1.4
-   ],
-   "focus": [
-    0.48,
-    0.47
-   ]
+   "grade": "noite"
   },
   {
    "src": "IMG_8455",
@@ -430,10 +389,11 @@
    "speed": 1
   },
   {
-   "src": "IMG_8446",
-   "in": 20.0,
+   "src": "IMG_8445",
+   "in": 45.56,
    "dur": 1.344,
-   "speed": 1
+   "speed": 1,
+   "grade": "noite"
   },
   {
    "src": "IMG_8453",
@@ -448,11 +408,11 @@
    "speed": 0.3
   },
   {
-   "src": "IMG_8446",
-   "in": 68.0,
+   "src": "IMG_8461",
+   "in": 4.82,
    "dur": 4.032,
    "speed": 0.3,
-   "grade": "fogo_quente"
+   "grade": "noite"
   },
   {
    "src": "IA_bandeira_lua",
@@ -520,6 +480,14 @@
   },
   {
    "png": "titles/marca_selo_img_ia.png",
+   "start": 97.41,
+   "end": 100.77,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
    "start": 122.28,
    "end": 123.62,
    "y": 1650,
@@ -530,14 +498,6 @@
    "png": "titles/marca_selo_img_ia.png",
    "start": 155.21,
    "end": 159.24,
-   "y": 1650,
-   "fade_in": 0.1,
-   "fade_out": 0.1
-  },
-  {
-   "png": "titles/marca_selo_img_ia.png",
-   "start": 97.41,
-   "end": 100.77,
    "y": 1650,
    "fade_in": 0.1,
    "fade_out": 0.1

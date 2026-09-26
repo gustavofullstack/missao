@@ -1,0 +1,796 @@
+{
+ "name": "21_o_ato_em_1_minuto",
+ "cover": 19.8,
+ "film": true,
+ "shots": [
+  {
+   "src": "IA_olho_onca",
+   "in": 5.0,
+   "dur": 2.0,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8455",
+   "in": 0.0,
+   "dur": 5.35
+  },
+  {
+   "src": "IMG_8453",
+   "in": 17.5,
+   "dur": 4.1,
+   "flash": true
+  },
+  {
+   "src": "IMG_8463",
+   "in": 3.8,
+   "dur": 4.5,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.48,
+    0.42
+   ]
+  },
+  {
+   "src": "IMG_8464",
+   "in": 88.1,
+   "dur": 1.7,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "src": "IMG_8449",
+   "in": 75.0,
+   "dur": 2.2,
+   "grade": "noite_clara"
+  },
+  {
+   "src": "IMG_8464",
+   "in": 92.0,
+   "dur": 0.9,
+   "flash": true,
+   "zoom": [
+    1.75,
+    1.75
+   ],
+   "focus": [
+    0.5,
+    0.42
+   ]
+  },
+  {
+   "src": "IMG_8445",
+   "in": 29.0,
+   "dur": 4.7,
+   "flash": true
+  },
+  {
+   "src": "IMG_8465",
+   "in": 51.5,
+   "dur": 5.2,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.48,
+    0.47
+   ]
+  },
+  {
+   "src": "IA_terras_raras",
+   "in": 0.4,
+   "dur": 3.5,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8460",
+   "in": 0.0,
+   "dur": 4.0
+  },
+  {
+   "src": "IMG_8457",
+   "in": 0.5,
+   "dur": 8.1,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8457",
+   "in": 19.0,
+   "dur": 4.0,
+   "flash": true
+  },
+  {
+   "src": "IA_onca_fumaca",
+   "in": 1.0,
+   "dur": 2.6,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8449",
+   "in": 120.0,
+   "dur": 2.55,
+   "grade": "noite_clara"
+  }
+ ],
+ "overlays": [
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 0.0,
+   "end": 2.0,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 30.65,
+   "end": 34.15,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 50.25,
+   "end": 52.85,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/21.png",
+   "start": 2.0,
+   "end": 11.4,
+   "y": 200
+  },
+  {
+   "png": "titles/marca_mapa.png",
+   "start": 2.3,
+   "end": 7.35,
+   "y": 520
+  },
+  {
+   "png": "titles/marca_bandeira.png",
+   "start": 7.35,
+   "end": 7.91,
+   "y": 0,
+   "slam": true,
+   "fade_in": 0.02,
+   "fade_out": 0.05
+  },
+  {
+   "png": "titles/marca_fim.png",
+   "start": 52.85,
+   "y": 0,
+   "fade_in": 0.3
+  },
+  {
+   "png": "titles/marca_ia_trilha_vinhetas.png",
+   "start": 0,
+   "y": 112,
+   "fade_in": 0.2
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8453",
+   "in": 15.5,
+   "dur": 2.1,
+   "voz": false
+  },
+  {
+   "src": "IMG_8455",
+   "in": 0.0,
+   "dur": 5.45,
+   "voz": true
+  },
+  {
+   "src": "IMG_8453",
+   "in": 17.5,
+   "dur": 4.2,
+   "voz": false
+  },
+  {
+   "src": "IMG_8463",
+   "in": 3.8,
+   "dur": 4.6,
+   "voz": true
+  },
+  {
+   "src": "IMG_8464",
+   "in": 88.1,
+   "dur": 4.9,
+   "voz": true
+  },
+  {
+   "src": "IMG_8445",
+   "in": 29.0,
+   "dur": 4.8,
+   "voz": false
+  },
+  {
+   "src": "IMG_8465",
+   "in": 51.5,
+   "dur": 8.8,
+   "voz": true
+  },
+  {
+   "src": "IMG_8460",
+   "in": 0.0,
+   "dur": 4.1,
+   "voz": false
+  },
+  {
+   "src": "IMG_8457",
+   "in": 0.5,
+   "dur": 8.2,
+   "voz": true
+  },
+  {
+   "src": "IMG_8457",
+   "in": 19.0,
+   "dur": 4.1,
+   "voz": false
+  },
+  {
+   "src": "IMG_8457",
+   "in": 23.0
+  }
+ ],
+ "xfade": 0.1,
+ "musica": {
+  "src": "MUS_energia_de_luta_rap_rock",
+  "in": 10.0,
+  "gain": -19
+ },
+ "texts": [
+  {
+   "lines": [
+    "Minas Gerais,"
+   ],
+   "start": 2.0,
+   "end": 3.34,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "o segundo estado"
+   ],
+   "start": 3.34,
+   "end": 4.36,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "do Brasil,"
+   ],
+   "start": 4.36,
+   "end": 5.16,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "o estado mais"
+   ],
+   "start": 5.16,
+   "end": 6.02,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "politizado do Brasil,"
+   ],
+   "start": 6.02,
+   "end": 7.35,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "MISSÃO!"
+   ],
+   "start": 7.5,
+   "end": 11.35,
+   "y": 1120,
+   "size": 130,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "O editorial deixou"
+   ],
+   "start": 11.47,
+   "end": 12.87,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "muito claro,"
+   ],
+   "start": 12.87,
+   "end": 13.55,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "o Brasil está"
+   ],
+   "start": 13.55,
+   "end": 14.45,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "virando as costas"
+   ],
+   "start": 14.45,
+   "end": 15.39,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "pro futuro."
+   ],
+   "start": 15.39,
+   "end": 15.95,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Quantos deles"
+   ],
+   "start": 16.19,
+   "end": 16.81,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "apoiaram?"
+   ],
+   "start": 16.81,
+   "end": 17.7,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "NENHUM!"
+   ],
+   "start": 19.95,
+   "end": 20.73,
+   "y": 1120,
+   "size": 110,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "EU VOTO 14!"
+   ],
+   "start": 20.9,
+   "end": 25.35,
+   "y": 1120,
+   "size": 118,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "Amigos,"
+   ],
+   "start": 25.69,
+   "end": 26.09,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "vocês sabem"
+   ],
+   "start": 26.09,
+   "end": 27.55,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que Minas Gerais é"
+   ],
+   "start": 27.55,
+   "end": 29.75,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "o segundo ou primeiro"
+   ],
+   "start": 29.75,
+   "end": 30.95,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "estado em reserva"
+   ],
+   "start": 30.95,
+   "end": 32.17,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de terra rara."
+   ],
+   "start": 32.17,
+   "end": 32.73,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Vocês sabem disso,"
+   ],
+   "start": 32.73,
+   "end": 33.37,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "né?"
+   ],
+   "start": 33.37,
+   "end": 33.63,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Sim!"
+   ],
+   "start": 33.63,
+   "end": 34.15,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "GLOBO, CHAMA O RENAN!"
+   ],
+   "start": 34.15,
+   "end": 36.5,
+   "y": 1120,
+   "size": 92,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "GLOBO, CHAMA O RENAN!"
+   ],
+   "start": 36.57,
+   "end": 38.1,
+   "y": 1120,
+   "size": 92,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "E eu quero"
+   ],
+   "start": 38.33,
+   "end": 39.35,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "deixar muito,"
+   ],
+   "start": 39.35,
+   "end": 40.19,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "muito,"
+   ],
+   "start": 40.19,
+   "end": 40.51,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "muito claro"
+   ],
+   "start": 40.51,
+   "end": 41.07,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "para todo mundo."
+   ],
+   "start": 41.07,
+   "end": 42.08,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "É 14 OU NADA!"
+   ],
+   "start": 42.08,
+   "end": 43.68,
+   "y": 1100,
+   "size": 96,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "É 14 OU NADA!"
+   ],
+   "start": 44.08,
+   "end": 45.68,
+   "y": 1100,
+   "size": 96,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "14 OU NADA!"
+   ],
+   "start": 46.4,
+   "end": 50.15,
+   "y": 1120,
+   "size": 118,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  }
+ ],
+ "crf": 20
+}

@@ -164,11 +164,15 @@ if __name__ == "__main__":
         # rótulo fixo do vídeo inteiro (art. 9-B, §1º, II/III): diz o que é sintético e a tecnologia usada
         selo(S, "CONTÉM IA · TRILHA: GOOGLE FLOW MUSIC").save(f"{T}/marca_ia_musica{sfx}.png")
         selo(S, "CONTÉM IA · MÚSICA E VINHETAS: GOOGLE FLOW").save(f"{T}/marca_ia_total{sfx}.png")
+        selo(S, "CONTÉM IA · VINHETAS: GOOGLE FLOW · ÁUDIO REAL DA PRAÇA").save(f"{T}/marca_ia_vinhetas{sfx}.png")
+        selo(S, "CONTÉM IA · TRILHA E VINHETAS: GOOGLE FLOW · FALAS REAIS").save(f"{T}/marca_ia_trilha_vinhetas{sfx}.png")
+        titulo(S, ["O ATO DE", "UBERLÂNDIA"], "25/09 · EM 1 MINUTO").save(f"{T}/21{sfx}.png")
         titulo(S, ["RENAN EM UBERLÂNDIA:", "“QUANTOS DELES", "APOIARAM?”"], "PRAÇA RUI BARBOSA · 25/09").save(f"{T}/14{sfx}.png")
         titulo(S, ["RENAN SOBRE O EDITORIAL", "DA THE ECONOMIST"], "UBERLÂNDIA · 25/09").save(f"{T}/15{sfx}.png")
         titulo(S, ["MERCADORES", "DA MISÉRIA"], "CLIPE · UBERLÂNDIA 25/09").save(f"{T}/16{sfx}.png")
         titulo(S, ["A RUA", "TÁ GRITANDO"], "UBERLÂNDIA · 25/09").save(f"{T}/17{sfx}.png")
         titulo(S, ["O PLANO DAS", "TERRAS RARAS"], "RENAN EM UBERLÂNDIA · 25/09").save(f"{T}/18{sfx}.png")
+        fim(S, "Vinhetas geradas com IA (Google Flow) · som e cenas do ato reais").save(f"{T}/marca_fim_vinhetas{sfx}.png")
         card(S, [("O QUE A THE ECONOMIST ESCREVEU", 50, AMARELO, BLACK),
                  ("Editorial de 24/09/2026:", 40, BRANCO, XBOLD),
                  ("“Brazil turns its back on the future”", 50, BRANCO, BLACK),
