@@ -1,0 +1,1668 @@
+{
+ "name": "30_discurso_parte3",
+ "grade": "noite",
+ "shots": [
+  {
+   "src": "IMG_8455",
+   "in": 44.478,
+   "dur": 13.522,
+   "zoom": [
+    1.3,
+    1.3
+   ],
+   "focus": [
+    0.5,
+    0.58
+   ]
+  },
+  {
+   "src": "IMG_8455",
+   "in": 58.0,
+   "dur": 11.88,
+   "zoom": [
+    1.456,
+    1.456
+   ],
+   "focus": [
+    0.5,
+    0.58
+   ]
+  },
+  {
+   "src": "IMG_8455",
+   "in": 69.88,
+   "dur": 10.83,
+   "zoom": [
+    1.3,
+    1.3
+   ],
+   "focus": [
+    0.5,
+    0.58
+   ]
+  },
+  {
+   "src": "IMG_8455",
+   "in": 80.71,
+   "dur": 7.2,
+   "zoom": [
+    1.456,
+    1.456
+   ],
+   "focus": [
+    0.5,
+    0.58
+   ]
+  },
+  {
+   "src": "IMG_8455",
+   "in": 87.91,
+   "dur": 5.69,
+   "zoom": [
+    1.3,
+    1.3
+   ],
+   "focus": [
+    0.5,
+    0.58
+   ]
+  },
+  {
+   "src": "IMG_8457",
+   "in": 0.5,
+   "dur": 5.9,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8457",
+   "in": 6.4,
+   "dur": 6.6,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8457",
+   "in": 32.9,
+   "dur": 3.52,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8457",
+   "in": 36.83,
+   "dur": 9.65,
+   "zoom": [
+    1.512,
+    1.512
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8457",
+   "in": 46.87,
+   "dur": 15.03,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8458",
+   "in": 0.0,
+   "dur": 8.74,
+   "zoom": [
+    1.3,
+    1.3
+   ],
+   "focus": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "src": "IMG_8458",
+   "in": 10.4,
+   "dur": 3.9,
+   "zoom": [
+    1.3,
+    1.3
+   ],
+   "focus": [
+    0.5,
+    0.55
+   ]
+  }
+ ],
+ "audio": "sync",
+ "voz": true,
+ "texts": [
+  {
+   "lines": [
+    "DISCURSO COMPLETO · PARTE 3/8",
+    "RENAN SANTOS · UBERLÂNDIA, 25/09"
+   ],
+   "start": 0,
+   "end": 102.462,
+   "y": 92,
+   "size": 34,
+   "color": "white",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "box": 0.4,
+   "pad": 10,
+   "shadow": 0,
+   "fade": 0.3
+  },
+  {
+   "lines": [
+    "É 14 OU NADA"
+   ],
+   "start": 0.3,
+   "end": 3.8,
+   "y": 330,
+   "size": 92,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "A classe política"
+   ],
+   "start": 0.25,
+   "end": 1.242,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de Minas sabe"
+   ],
+   "start": 1.242,
+   "end": 2.402,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que Cleitinho,"
+   ],
+   "start": 2.402,
+   "end": 3.502,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "governador,"
+   ],
+   "start": 3.502,
+   "end": 4.082,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "é ingovernável."
+   ],
+   "start": 4.082,
+   "end": 5.422,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Ele não vai"
+   ],
+   "start": 5.422,
+   "end": 6.847,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "fazer as reformas"
+   ],
+   "start": 6.847,
+   "end": 7.902,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que vão resolver"
+   ],
+   "start": 7.902,
+   "end": 8.462,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "as contas públicas"
+   ],
+   "start": 8.462,
+   "end": 9.342,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de Minas que"
+   ],
+   "start": 9.342,
+   "end": 10.022,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "estão estouradas ainda"
+   ],
+   "start": 10.022,
+   "end": 11.702,
+   "y": 1180,
+   "size": 72,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "nessa gestão"
+   ],
+   "start": 11.702,
+   "end": 12.442,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "do partido novo."
+   ],
+   "start": 12.442,
+   "end": 13.782,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Ele não vai"
+   ],
+   "start": 13.862,
+   "end": 14.642,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "resolver os problemas"
+   ],
+   "start": 14.642,
+   "end": 15.302,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de infraestrutura."
+   ],
+   "start": 15.302,
+   "end": 16.182,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "O crime organizado"
+   ],
+   "start": 16.182,
+   "end": 17.362,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "vai continuar"
+   ],
+   "start": 17.362,
+   "end": 17.902,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "avançando como ele"
+   ],
+   "start": 17.902,
+   "end": 18.822,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "já começou."
+   ],
+   "start": 18.822,
+   "end": 19.582,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "O PCC avançando"
+   ],
+   "start": 19.582,
+   "end": 20.902,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "pela região"
+   ],
+   "start": 20.902,
+   "end": 21.382,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "do Triângulo"
+   ],
+   "start": 21.382,
+   "end": 21.922,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "e o Comando Vermelho"
+   ],
+   "start": 21.922,
+   "end": 23.282,
+   "y": 1180,
+   "size": 71,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "avançando pela região"
+   ],
+   "start": 23.282,
+   "end": 24.242,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "do Juiz"
+   ],
+   "start": 24.242,
+   "end": 24.862,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de Fora."
+   ],
+   "start": 24.862,
+   "end": 25.522,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Meus amigos,"
+   ],
+   "start": 25.522,
+   "end": 26.582,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Minas Gerais tem"
+   ],
+   "start": 26.582,
+   "end": 27.887,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "solução."
+   ],
+   "start": 27.887,
+   "end": 28.702,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "O povo"
+   ],
+   "start": 28.702,
+   "end": 29.422,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de vocês tem solução."
+   ],
+   "start": 29.422,
+   "end": 30.502,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "E as pessoas"
+   ],
+   "start": 30.502,
+   "end": 31.242,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "estão tão iludidas,"
+   ],
+   "start": 31.242,
+   "end": 32.382,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que estão votando"
+   ],
+   "start": 32.382,
+   "end": 33.242,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "até num maluco,"
+   ],
+   "start": 33.242,
+   "end": 34.362,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "um doido"
+   ],
+   "start": 34.362,
+   "end": 35.442,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de rede social."
+   ],
+   "start": 35.442,
+   "end": 36.462,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "As coisas não"
+   ],
+   "start": 36.462,
+   "end": 37.622,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "estão normais."
+   ],
+   "start": 37.622,
+   "end": 38.862,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "O Brasil está"
+   ],
+   "start": 38.862,
+   "end": 39.982,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "sendo destruído."
+   ],
+   "start": 39.982,
+   "end": 41.122,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "E graças"
+   ],
+   "start": 41.122,
+   "end": 42.062,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "a Deus eu estou"
+   ],
+   "start": 42.062,
+   "end": 42.642,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "diante de vocês,"
+   ],
+   "start": 42.642,
+   "end": 43.542,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "porque o Brasil"
+   ],
+   "start": 43.542,
+   "end": 44.682,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que importa está"
+   ],
+   "start": 44.682,
+   "end": 45.502,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "aqui na minha"
+   ],
+   "start": 45.502,
+   "end": 46.117,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "frente,"
+   ],
+   "start": 46.117,
+   "end": 46.392,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "em Uberlândia."
+   ],
+   "start": 46.392,
+   "end": 47.482,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Vocês são"
+   ],
+   "start": 47.482,
+   "end": 47.955,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "o Brasil que importa."
+   ],
+   "start": 47.955,
+   "end": 49.122,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "E eu quero"
+   ],
+   "start": 49.402,
+   "end": 50.322,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "deixar muito,"
+   ],
+   "start": 50.322,
+   "end": 51.162,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "muito,"
+   ],
+   "start": 51.162,
+   "end": 51.482,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "muito claro"
+   ],
+   "start": 51.482,
+   "end": 51.978,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "para todo mundo."
+   ],
+   "start": 51.978,
+   "end": 52.982,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "É 14"
+   ],
+   "start": 52.982,
+   "end": 54.002,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "ou nada!"
+   ],
+   "start": 54.002,
+   "end": 55.022,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "É 14 OU NADA!"
+   ],
+   "start": 55.222,
+   "end": 61.622,
+   "y": 1120,
+   "size": 110,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "Eu contei isso"
+   ],
+   "start": 61.822,
+   "end": 63.422,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "nos últimos eventos"
+   ],
+   "start": 63.422,
+   "end": 64.242,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que fizemos."
+   ],
+   "start": 64.242,
+   "end": 65.342,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Mandaram emissários"
+   ],
+   "start": 65.392,
+   "end": 66.372,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "da campanha do Flávio,"
+   ],
+   "start": 66.372,
+   "end": 67.352,
+   "y": 1180,
+   "size": 71,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "mandaram pra campanha"
+   ],
+   "start": 67.352,
+   "end": 68.592,
+   "y": 1180,
+   "size": 65,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "do Zema."
+   ],
+   "start": 68.592,
+   "end": 69.252,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Zema praticamente"
+   ],
+   "start": 69.252,
+   "end": 70.292,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "tirou a candidatura"
+   ],
+   "start": 70.292,
+   "end": 71.272,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "dele e liberou"
+   ],
+   "start": 71.272,
+   "end": 72.079,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "os candidatos"
+   ],
+   "start": 72.079,
+   "end": 72.534,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "do Novo: apoio"
+   ],
+   "start": 72.534,
+   "end": 73.217,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "ao Flávio."
+   ],
+   "start": 73.217,
+   "end": 73.752,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Vocês viram isso,"
+   ],
+   "start": 73.752,
+   "end": 74.312,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "né?"
+   ],
+   "start": 74.312,
+   "end": 74.992,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "A suprema vergonha."
+   ],
+   "start": 75.042,
+   "end": 77.062,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "A suprema vergonha."
+   ],
+   "start": 77.062,
+   "end": 79.382,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Pois bem,"
+   ],
+   "start": 79.382,
+   "end": 81.929,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "…"
+   ],
+   "start": 81.929,
+   "end": 83.262,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Manda uma mensagem"
+   ],
+   "start": 83.262,
+   "end": 83.762,
+   "y": 1180,
+   "size": 71,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "pro Renan,"
+   ],
+   "start": 83.762,
+   "end": 84.242,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que o Flávio"
+   ],
+   "start": 84.242,
+   "end": 85.202,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "vai até gravar"
+   ],
+   "start": 85.202,
+   "end": 86.102,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "vídeo com alguns"
+   ],
+   "start": 86.102,
+   "end": 86.642,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "candidatos seus."
+   ],
+   "start": 86.642,
+   "end": 87.982,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Manda tirar"
+   ],
+   "start": 87.982,
+   "end": 88.762,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "a candidatura."
+   ],
+   "start": 88.762,
+   "end": 89.822,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Absolutamente nenhum"
+   ],
+   "start": 89.822,
+   "end": 90.622,
+   "y": 1180,
+   "size": 69,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "candidato,"
+   ],
+   "start": 90.622,
+   "end": 91.542,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "em nenhum estado"
+   ],
+   "start": 91.542,
+   "end": 92.262,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "da federação,"
+   ],
+   "start": 92.262,
+   "end": 92.922,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "do partido Missão,"
+   ],
+   "start": 92.922,
+   "end": 93.802,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "aceitou esta merda,"
+   ],
+   "start": 93.802,
+   "end": 96.302,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "aceitou essa proposta"
+   ],
+   "start": 96.302,
+   "end": 97.442,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "indecente."
+   ],
+   "start": 97.442,
+   "end": 98.512,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "MISSÃO!"
+   ],
+   "start": 98.662,
+   "end": 102.462,
+   "y": 1120,
+   "size": 110,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "CONTINUA NA PARTE 4"
+   ],
+   "start": 99.862,
+   "end": 102.462,
+   "y": 1480,
+   "size": 84,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  }
+ ],
+ "overlays": [],
+ "cover": 2.0,
+ "crf": 19,
+ "preset": "medium"
+}

@@ -67,7 +67,10 @@ def shot(s, grade, S=1):
     n = round(s["dur"] * FPS)
     vf = [f"setpts=(PTS-STARTPTS)/{speed}", f"fps={FPS}"]
     fx, fy = s.get("focus", [0.5, 0.5])
-    if (z0, z1) != (1, 1):  # zoom feito na resolução 4K: sem o tremido do zoompan em 1080
+    if z0 == z1 != 1:  # enquadramento fixo (corte seco de fala): crop simples, sem o custo do zoompan em 4K
+        vf.append(f"crop=w=iw/{z0}:h=ih/{z0}:x='max(0,min(iw-iw/{z0},{fx}*iw-iw/{z0}/2))':"
+                  f"y='max(0,min(ih-ih/{z0},{fy}*ih-ih/{z0}/2))',scale={W}:{H}:flags=lanczos")
+    elif (z0, z1) != (1, 1):  # zoom feito na resolução 4K: sem o tremido do zoompan em 1080
         vf.append(f"zoompan=z='{z0}+({z1}-{z0})*on/{max(n - 1, 1)}':"
                   f"x='max(0,min(iw-iw/zoom,{fx}*iw-iw/zoom/2))':"
                   f"y='max(0,min(ih-ih/zoom,{fy}*ih-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
@@ -76,7 +79,8 @@ def shot(s, grade, S=1):
     vf += [TONEMAP if is_hdr(p) else "format=gbrp16le", g,
            "scale=out_color_matrix=bt709:out_range=tv:flags=lanczos", "format=yuv420p"]
     os.makedirs(f"{ROOT}/seg", exist_ok=True)
-    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{s['in']:.3f}", "-t", f"{s['dur'] * speed + 0.3:.3f}",
+    # sem o filtro de deblocagem na decodificação: ~30% mais rápido e invisível depois de reduzir 4K para 1080
+    run(["ffmpeg", "-v", "error", "-y", "-skip_loop_filter", "all", "-ss", f"{s['in']:.3f}", "-t", f"{s['dur'] * speed + 0.3:.3f}",
          "-i", p, "-an", "-vf", ",".join(vf), "-frames:v", str(n), "-c:v", "libx264", "-crf", "12",
          "-preset", "veryfast", "-pix_fmt", "yuv420p", out])
     got = int(run(["ffprobe", "-v", "error", "-count_frames", "-select_streams", "v:0", "-show_entries",
@@ -182,6 +186,8 @@ def render(edl):
     S = edl.get("escala", 1)
     name, grade = edl["name"] + ("_4k" if S == 2 else ""), edl.get("grade", "noite")
     segs = [shot(s, grade, S) for s in edl["shots"]]
+    if os.environ.get("SO_PLANOS"):  # adianta só a parte pesada (planos no cache); a montagem roda depois
+        return
     total = round(sum(s["dur"] for s in edl["shots"]), 3)
     lst = f"{ROOT}/seg/{name}.txt"
     open(lst, "w").write("".join(f"file '{p}'\n" for p in segs))
@@ -246,7 +252,7 @@ def render(edl):
     extra = sum((["-loop", "1", "-t", f"{total:.3f}", "-i", f"{ROOT}/{o['png']}"] for o in ovs), [])
     run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-i", wav, *extra,
          "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264",
-         "-preset", "slow" if S == 1 else "medium", "-crf", str(edl.get("crf", 17) if S == 1 else 18),
+         "-preset", edl.get("preset", "slow" if S == 1 else "medium"), "-crf", str(edl.get("crf", 17) if S == 1 else 18),
          "-profile:v", "high", "-level", "4.2" if S == 1 else "5.1", "-pix_fmt", "yuv420p", "-r", str(FPS),
          "-g", str(FPS * 2), "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
          "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-movflags", "+faststart",
