@@ -1,0 +1,236 @@
+import json
+import os
+
+font = "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf"
+
+texts_def = [
+    {
+        "lines": ["A RUA TÁ GRITANDO!"],
+        "start": 0.2,
+        "end": 3.3,
+        "y": 1450,
+        "size": 72,
+        "color": "#FCBE26",
+        "font": font,
+        "border": 5,
+        "bordercolor": "black",
+        "fade": 0.06,
+        "anim": "pop"
+    },
+    {
+        "lines": ["O BRASIL NÃO VAI", "MAIS SE CALAR!"],
+        "start": 3.5,
+        "end": 6.0,
+        "y": 1400,
+        "size": 66,
+        "color": "#FFFFFF",
+        "font": font,
+        "border": 5,
+        "bordercolor": "black",
+        "fade": 0.06,
+        "anim": "pop"
+    },
+    {
+        "lines": ["QUANTOS EMPRESÁRIOS", "APOIARAM?"],
+        "start": 15.5,
+        "end": 17.5,
+        "y": 1400,
+        "size": 64,
+        "color": "#FCBE26",
+        "font": font,
+        "border": 5,
+        "bordercolor": "black",
+        "fade": 0.06,
+        "anim": "pop"
+    },
+    {
+        "lines": ["NENHUM!", "A FORÇA VEM DO POVO!"],
+        "start": 17.5,
+        "end": 19.4,
+        "y": 1400,
+        "size": 66,
+        "color": "#FFFFFF",
+        "font": font,
+        "border": 5,
+        "bordercolor": "black",
+        "fade": 0.06,
+        "anim": "pop"
+    },
+    {
+        "lines": ["MISSÃO!", "FORA LADRÕES!"],
+        "start": 22.2,
+        "end": 26.0,
+        "y": 1400,
+        "size": 76,
+        "color": "#FCBE26",
+        "font": font,
+        "border": 5,
+        "bordercolor": "black",
+        "fade": 0.06,
+        "anim": "pop"
+    },
+    {
+        "lines": ["É 14 OU NADA!"],
+        "start": 26.2,
+        "end": 29.5,
+        "y": 1450,
+        "size": 80,
+        "color": "#FFFFFF",
+        "font": font,
+        "border": 5,
+        "bordercolor": "black",
+        "fade": 0.06,
+        "anim": "pop"
+    }
+]
+
+edl = {
+    "name": "21_o_clipe_oficial_missao_flow_rap",
+    "cover": 4.0,
+    "film": True,
+    "xfade": 0.2,
+    "shots": [
+        {
+            "src": "google_flow_producer_music_video",
+            "in": 2.5,
+            "dur": 3.36,
+            "grade": "neutro"
+        },
+        {
+            "src": "IMG_8450",
+            "in": 15.0,
+            "dur": 2.688,
+            "grade": "noite",
+            "flash": True
+        },
+        {
+            "src": "google_flow_producer_music_video",
+            "in": 58.0,
+            "dur": 3.36,
+            "grade": "neutro"
+        },
+        {
+            "src": "IMG_8449",
+            "in": 140.0,
+            "dur": 2.688,
+            "grade": "noite_clara"
+        },
+        {
+            "src": "google_flow_producer_music_video",
+            "in": 48.0,
+            "dur": 3.36,
+            "grade": "neutro"
+        },
+        {
+            "src": "IMG_8464",
+            "in": 88.1,
+            "dur": 4.032,
+            "grade": "noite",
+            "zoom": [1.4, 1.4],
+            "focus": [0.5, 0.45]
+        },
+        {
+            "src": "google_flow_producer_music_video",
+            "in": 78.0,
+            "dur": 2.688,
+            "grade": "neutro"
+        },
+        {
+            "src": "IMG_8441",
+            "in": 9.0,
+            "dur": 4.032,
+            "grade": "fogo",
+            "flash": True
+        },
+        {
+            "src": "google_flow_producer_music_video",
+            "in": 112.0,
+            "dur": 3.36,
+            "grade": "neutro"
+        }
+    ],
+    "overlays": [
+        {
+            "png": "titles/21.png",
+            "start": 0.5,
+            "end": 4.5,
+            "y": 140,
+            "fade_in": 0.2,
+            "fade_out": 0.2
+        },
+        {
+            "png": "titles/marca_ia_total.png",
+            "start": 0,
+            "y": 112,
+            "fade_in": 0.2
+        },
+        {
+            "png": "titles/marca_selo_img_ia.png",
+            "start": 0.0,
+            "end": 3.36,
+            "y": 1650,
+            "fade_in": 0.1,
+            "fade_out": 0.1
+        },
+        {
+            "png": "titles/marca_selo_img_ia.png",
+            "start": 6.048,
+            "end": 9.408,
+            "y": 1650,
+            "fade_in": 0.1,
+            "fade_out": 0.1
+        },
+        {
+            "png": "titles/marca_selo_img_ia.png",
+            "start": 12.096,
+            "end": 15.456,
+            "y": 1650,
+            "fade_in": 0.1,
+            "fade_out": 0.1
+        },
+        {
+            "png": "titles/marca_selo_img_ia.png",
+            "start": 19.488,
+            "end": 22.176,
+            "y": 1650,
+            "fade_in": 0.1,
+            "fade_out": 0.1
+        },
+        {
+            "png": "titles/marca_selo_img_ia.png",
+            "start": 26.208,
+            "end": 29.568,
+            "y": 1650,
+            "fade_in": 0.1,
+            "fade_out": 0.1
+        },
+        {
+            "png": "titles/marca_fim.png",
+            "start": 27.5,
+            "y": 0,
+            "fade_in": 0.3
+        }
+    ],
+    "texts": texts_def,
+    "audio": [
+        {
+            "src": "google_flow_producer_music_video",
+            "in": 0.0,
+            "dur": 29.568,
+            "gain": 2
+        }
+    ]
+}
+
+os.makedirs("/Users/sug/Projetos/missao/edl3", exist_ok=True)
+os.makedirs("/Users/sug/Projetos/missao/edl3k", exist_ok=True)
+
+with open("/Users/sug/Projetos/missao/edl3/21_o_clipe_oficial_missao_flow_rap.json", "w") as f:
+    json.dump(edl, f, ensure_ascii=False, indent=2)
+
+edl_4k = dict(edl)
+edl_4k["escala"] = 2
+with open("/Users/sug/Projetos/missao/edl3k/21_o_clipe_oficial_missao_flow_rap.json", "w") as f:
+    json.dump(edl_4k, f, ensure_ascii=False, indent=2)
+
+print("EDL 21 corrigida com texts schema válido!")
