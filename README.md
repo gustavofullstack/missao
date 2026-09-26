@@ -44,9 +44,10 @@ pipeline/legendas*.py   legendas dos posts com travas (≥ 500 caracteres, 3–5
 pipeline/upload.sh      cópia ≤ 9,5 MB em 2 passes para envio pelo navegador
 pipeline/capas3.py      capas: fundo gerado (Nano Banana Pro) + título na fonte da marca + selo de IA
 pipeline/kit_postagem.py kit por peça: legenda, texto do X (≤ 280), título do Shorts (≤ 100), horário, com travas
+pipeline/burn_captions_macos.py incorpora SRT revisado e títulos em masters SDR 1080p ou 4K usando VideoToolbox
 ```
 
-## Catálogo (26/09/2026) — 21 peças
+## Catálogo (26/09/2026) — 23 peças
 
 | # | Peça | Duração | Observação |
 |---|---|---|---|
@@ -65,6 +66,8 @@ pipeline/kit_postagem.py kit por peça: legenda, texto do X (≤ 280), título d
 | 19 | Vinheta: MISSÃO! EU VOTO 14! | 13 s | coro real da praça + vinhetas de IA |
 | 20 | Missão! Fora ladrões! | 33 s | rap-rock criado com IA + imagens reais + vinhetas, rotulados |
 | 21 | O ato em 1 minuto | 55 s | só falas e coros reais, trilha instrumental de IA por baixo |
+| 22 | Terras raras — fala contínua | 79,1 s | fala original com contexto, ilustrações identificadas e legendas revisadas |
+| 23 | Quanto custa viver? — fala contínua | 84,1 s | fala original com contexto, ilustrações identificadas e legendas revisadas |
 
 ## Como rodar
 
@@ -73,6 +76,13 @@ Requisitos: Python 3.10+ com `pillow` e `numpy`; FFmpeg 6.1+ com `zscale` (libzi
 ```bash
 python3 pipeline/render.py edl/01_voce_tinha_que_estar_aqui.json      # 1080x1920
 python3 pipeline/render.py edl4k/01_voce_tinha_que_estar_aqui.json    # 2160x3840
+```
+
+No macOS com Apple Silicon, um master **já convertido para SDR** pode receber legendas SRT revisadas e os títulos definidos no EDL com `pipeline/burn_captions_macos.py`. O script usa Pillow e FFmpeg com `h264_videotoolbox` e `h264_metadata`; aceita 1080×1920 ou 2160×3840. Use `--asset-root` para localizar os PNG de `overlays` no EDL. Se o arquivo de entrada herdou tags HLG/PQ de segmentos previamente tonemapeados, `--source-is-tonemapped-sdr` confirma explicitamente que os pixels já são SDR. O script recusa tags HDR sem essa confirmação, pois mudar só os metadados não converte a imagem.
+
+```bash
+python3 pipeline/burn_captions_macos.py out/reel-sdr.mp4 legendas/reel.srt out/reel-legendado.mp4 \
+  --edl-texts edl/reel.json --asset-root assets --source-is-tonemapped-sdr
 ```
 
 Os caminhos de trabalho (`/root/reels/src`, `seg/`, `out/`, `titles/`) ficam no topo de `render.py` e `marca.py`.
