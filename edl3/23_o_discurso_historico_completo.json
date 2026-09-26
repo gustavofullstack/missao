@@ -1,0 +1,807 @@
+{
+ "name": "23_o_discurso_historico_completo",
+ "cover": 15.0,
+ "film": true,
+ "shots": [
+  {
+   "src": "IMG_8455",
+   "in": 0.0,
+   "dur": 5.4,
+   "zoom": [
+    1.2,
+    1.2
+   ],
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "src": "IMG_8453",
+   "in": 15.5,
+   "dur": 3.2,
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "fogo"
+  },
+  {
+   "src": "IMG_8463",
+   "in": 3.8,
+   "dur": 18.0,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.48,
+    0.42
+   ]
+  },
+  {
+   "src": "IMG_8449",
+   "in": 25.0,
+   "dur": 3.2,
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "noite_clara"
+  },
+  {
+   "src": "IMG_8464",
+   "in": 10.4,
+   "dur": 22.0,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "src": "IMG_8446",
+   "in": 28.0,
+   "dur": 2.8,
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "noite"
+  },
+  {
+   "src": "IMG_8464",
+   "in": 41.0,
+   "dur": 5.2,
+   "zoom": [
+    1.45,
+    1.45
+   ],
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "src": "IMG_8464",
+   "in": 88.1,
+   "dur": 5.2,
+   "zoom": [
+    1.6,
+    1.6
+   ],
+   "focus": [
+    0.5,
+    0.42
+   ],
+   "flash": true
+  },
+  {
+   "src": "IMG_8445",
+   "in": 29.0,
+   "dur": 3.0,
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "noite"
+  },
+  {
+   "src": "IMG_8465",
+   "in": 51.5,
+   "dur": 26.5,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.48,
+    0.47
+   ]
+  },
+  {
+   "src": "IMG_8449",
+   "in": 75.0,
+   "dur": 3.2,
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "noite_clara"
+  },
+  {
+   "src": "IMG_8452",
+   "in": 18.0,
+   "dur": 10.2,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "src": "IMG_8468",
+   "in": 29.0,
+   "dur": 7.5,
+   "zoom": [
+    1.3,
+    1.3
+   ],
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "src": "IMG_8457",
+   "in": 0.5,
+   "dur": 8.0,
+   "zoom": [
+    1.45,
+    1.45
+   ],
+   "focus": [
+    0.5,
+    0.48
+   ],
+   "flash": true
+  },
+  {
+   "src": "IMG_8453",
+   "in": 17.5,
+   "dur": 4.0,
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "fogo"
+  },
+  {
+   "src": "IMG_8457",
+   "in": 23.0,
+   "dur": 5.2,
+   "zoom": [
+    1.0,
+    1.0
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "grade": "noite"
+  }
+ ],
+ "overlays": [
+  {
+   "png": "titles/marca_ia_trilha_vinhetas.png",
+   "start": 0.0,
+   "y": 112,
+   "fade_in": 0.2
+  },
+  {
+   "png": "titles/21.png",
+   "start": 0.5,
+   "end": 8.0,
+   "y": 200
+  },
+  {
+   "png": "titles/marca_bandeira.png",
+   "start": 8.0,
+   "end": 8.6,
+   "y": 0,
+   "slam": true,
+   "fade_in": 0.02,
+   "fade_out": 0.05
+  },
+  {
+   "png": "titles/card_economist.png",
+   "start": 9.0,
+   "end": 26.0,
+   "y": 230
+  },
+  {
+   "png": "titles/marca_mapa.png",
+   "start": 55.0,
+   "end": 70.0,
+   "y": 220
+  },
+  {
+   "png": "titles/marca_fim.png",
+   "start": 129.1,
+   "y": 0,
+   "fade_in": 0.3
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8455",
+   "in": 0.0,
+   "dur": 5.5,
+   "voz": true
+  },
+  {
+   "src": "IMG_8453",
+   "in": 15.5,
+   "dur": 3.3,
+   "voz": false
+  },
+  {
+   "src": "IMG_8463",
+   "in": 3.8,
+   "dur": 18.1,
+   "voz": true
+  },
+  {
+   "src": "IMG_8449",
+   "in": 25.0,
+   "dur": 3.3,
+   "voz": false
+  },
+  {
+   "src": "IMG_8464",
+   "in": 10.4,
+   "dur": 22.1,
+   "voz": true
+  },
+  {
+   "src": "IMG_8446",
+   "in": 28.0,
+   "dur": 2.9,
+   "voz": false
+  },
+  {
+   "src": "IMG_8464",
+   "in": 41.0,
+   "dur": 5.3,
+   "voz": true
+  },
+  {
+   "src": "IMG_8464",
+   "in": 88.1,
+   "dur": 5.3,
+   "voz": true
+  },
+  {
+   "src": "IMG_8445",
+   "in": 29.0,
+   "dur": 3.1,
+   "voz": false
+  },
+  {
+   "src": "IMG_8465",
+   "in": 51.5,
+   "dur": 26.6,
+   "voz": true
+  },
+  {
+   "src": "IMG_8449",
+   "in": 75.0,
+   "dur": 3.3,
+   "voz": false
+  },
+  {
+   "src": "IMG_8452",
+   "in": 18.0,
+   "dur": 10.3,
+   "voz": true
+  },
+  {
+   "src": "IMG_8468",
+   "in": 29.0,
+   "dur": 7.6,
+   "voz": true
+  },
+  {
+   "src": "IMG_8457",
+   "in": 0.5,
+   "dur": 8.1,
+   "voz": true
+  },
+  {
+   "src": "IMG_8453",
+   "in": 17.5,
+   "dur": 4.1,
+   "voz": false
+  },
+  {
+   "src": "IMG_8457",
+   "in": 23.0,
+   "dur": 5.3,
+   "voz": false
+  }
+ ],
+ "xfade": 0.1,
+ "musica": {
+  "src": "MUS_energia_de_luta_rap_rock",
+  "in": 5.0,
+  "gain": -21
+ },
+ "texts": [
+  {
+   "lines": [
+    "O BRASIL QUE IMPORTA ESTÁ AQUI"
+   ],
+   "start": 0.3,
+   "end": 5.2,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "MISSÃO! MISSÃO!"
+   ],
+   "start": 5.5,
+   "end": 8.5,
+   "y": 1120,
+   "size": 115,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "O BRASIL DÁ AS COSTAS PRO FUTURO"
+   ],
+   "start": 9.1,
+   "end": 14.6,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "VIRANDO AS COSTAS PRA VOCÊS!"
+   ],
+   "start": 14.8,
+   "end": 20.6,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "A CANDIDATURA DA ESPERANÇA"
+   ],
+   "start": 20.8,
+   "end": 26.4,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "PRAÇA RUI BARBOSA · UBERLÂNDIA"
+   ],
+   "start": 26.7,
+   "end": 29.7,
+   "y": 1120,
+   "size": 88,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "QUEM TÁ AQUI COM O LIVRO AMARELO?"
+   ],
+   "start": 30.3,
+   "end": 35.3,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "FINANCIAMOS CAMPANHA VENDENDO LIVRO!"
+   ],
+   "start": 35.6,
+   "end": 41.8,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "PROPOSTAS REAIS PRA TODAS AS ÁREAS!"
+   ],
+   "start": 42.0,
+   "end": 47.8,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "PROPOSTAS QUE NINGUÉM DERRUBOU!"
+   ],
+   "start": 48.0,
+   "end": 51.6,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "NINGUÉM DERRUBOU UMA PROPOSTA!"
+   ],
+   "start": 54.8,
+   "end": 59.6,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "QUANTOS EMPRESÁRIOS APOIARAM?"
+   ],
+   "start": 60.0,
+   "end": 63.6,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "NENHUM!"
+   ],
+   "start": 63.7,
+   "end": 64.9,
+   "y": 1120,
+   "size": 130,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "A FORÇA VEM DO POVO!"
+   ],
+   "start": 65.1,
+   "end": 67.9,
+   "y": 1120,
+   "size": 105,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "MINAS GERAIS: O CENTRO DAS TERRAS RARAS"
+   ],
+   "start": 68.5,
+   "end": 74.5,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "ZONAS ECONÔMICAS ESPECIAIS"
+   ],
+   "start": 74.8,
+   "end": 81.0,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "OS SUPER-ÍMÃS E BATERIAS FEITOS AQUI!"
+   ],
+   "start": 81.2,
+   "end": 88.0,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "AS RIQUEZAS SERVINDO O BRASIL!"
+   ],
+   "start": 88.2,
+   "end": 94.2,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "O BRASIL É NOSSO!"
+   ],
+   "start": 94.6,
+   "end": 97.6,
+   "y": 1120,
+   "size": 120,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "O CENTRÃO PRECISA DE RÉGUA!"
+   ],
+   "start": 98.2,
+   "end": 102.7,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "PARAR DE ROUBAR A POPULAÇÃO!"
+   ],
+   "start": 102.9,
+   "end": 107.7,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "VOCÊ NÃO PRECISA VOTAR EM LADRÃO!"
+   ],
+   "start": 108.1,
+   "end": 112.4,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "MEU NOME É RENAN SANTOS!"
+   ],
+   "start": 112.5,
+   "end": 115.2,
+   "y": 1120,
+   "size": 100,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "É 14 OU NADA!"
+   ],
+   "start": 115.6,
+   "end": 119.2,
+   "y": 1120,
+   "size": 125,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "É 14 OU NADA!"
+   ],
+   "start": 119.4,
+   "end": 123.2,
+   "y": 1120,
+   "size": 125,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "FORA LADRÕES! FORA CORRUPÇÃO!"
+   ],
+   "start": 123.5,
+   "end": 127.3,
+   "y": 1120,
+   "size": 95,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "A RUA É A NOSSA REVOLUÇÃO!"
+   ],
+   "start": 127.5,
+   "end": 132.4,
+   "y": 1120,
+   "size": 98,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 24,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  }
+ ],
+ "crf": 22
+}

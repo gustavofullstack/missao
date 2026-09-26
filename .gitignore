@@ -8,3 +8,4 @@ __pycache__/
 seg/
 work/
 venv/
+out/
