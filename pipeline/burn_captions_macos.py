@@ -210,7 +210,18 @@ def main() -> None:
         staged = tempdir / "render.part.mp4"
         command += [str(staged)]
         subprocess.run(command, check=True)
-        os.replace(staged, args.output)
+        # VideoToolbox may copy the source's HLG VUI into its H.264 stream even
+        # when output tags are requested. A stream-copy remux fixes both the
+        # codec VUI and container tags without another lossy video encode.
+        tagged = tempdir / "tagged.part.mp4"
+        subprocess.run(["/opt/homebrew/bin/ffmpeg", "-v", "error", "-y", "-i", str(staged),
+                        "-map", "0:v:0", "-map", "0:a?", "-c", "copy",
+                        "-bsf:v", "h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1",
+                        "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
+                        "-movflags", "+faststart", str(tagged)], check=True)
+        if probe(tagged)[3] != "bt709":
+            raise RuntimeError("remux did not set BT.709 transfer metadata")
+        os.replace(tagged, args.output)
     print(f"wrote {args.output} with {len(subtitles)} cues")
 
 
