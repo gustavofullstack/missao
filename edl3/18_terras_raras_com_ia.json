@@ -1,0 +1,894 @@
+{
+ "name": "18_terras_raras_com_ia",
+ "cover": 7.0,
+ "film": true,
+ "shots": [
+  {
+   "src": "IMG_8465",
+   "in": 51.5,
+   "dur": 5.2,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.48,
+    0.47
+   ]
+  },
+  {
+   "src": "IA_terras_raras",
+   "in": 0.4,
+   "dur": 3.5,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8465",
+   "in": 71.3,
+   "dur": 4.0,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.48,
+    0.47
+   ]
+  },
+  {
+   "src": "IMG_8449",
+   "in": 25.0,
+   "dur": 3.0
+  },
+  {
+   "src": "IMG_8465",
+   "in": 78.3,
+   "dur": 3.6,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.48,
+    0.47
+   ]
+  },
+  {
+   "src": "IA_terras_raras",
+   "in": 6.0,
+   "dur": 3.0,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IA_fabrica",
+   "in": 1.0,
+   "dur": 1.1,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IA_drones",
+   "in": 1.0,
+   "dur": 2.0,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8465",
+   "in": 88.0,
+   "dur": 2.6,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.48,
+    0.47
+   ]
+  },
+  {
+   "src": "IMG_8453",
+   "in": 34.0,
+   "dur": 3.35,
+   "speed": 0.3
+  },
+  {
+   "src": "IMG_8465",
+   "in": 96.8,
+   "dur": 1.6,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.48,
+    0.47
+   ]
+  },
+  {
+   "src": "IA_fabrica",
+   "in": 4.0,
+   "dur": 1.5,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IA_drones",
+   "in": 5.0,
+   "dur": 1.3,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8465",
+   "in": 101.2,
+   "dur": 4.0,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.48,
+    0.47
+   ]
+  },
+  {
+   "src": "IA_mapa_ouro",
+   "in": 2.0,
+   "dur": 2.6,
+   "speed": 1.0,
+   "grade": "neutro"
+  }
+ ],
+ "overlays": [
+  {
+   "png": "titles/18.png",
+   "start": 0,
+   "y": 200
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 5.2,
+   "end": 8.7,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 19.3,
+   "end": 22.3,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 22.3,
+   "end": 23.4,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 23.4,
+   "end": 25.4,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 32.95,
+   "end": 34.45,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 34.45,
+   "end": 35.75,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 39.75,
+   "end": 42.35,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_mapa.png",
+   "start": 38.5,
+   "end": 39.75,
+   "y": 330,
+   "fade_in": 0.15
+  },
+  {
+   "png": "titles/marca_ia_total.png",
+   "start": 0,
+   "y": 112,
+   "fade_in": 0.2
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8465",
+   "in": 51.5,
+   "dur": 8.819999999999999,
+   "voz": true
+  },
+  {
+   "src": "IMG_8465",
+   "in": 71.3,
+   "dur": 22.77,
+   "voz": true
+  },
+  {
+   "src": "IMG_8465",
+   "in": 96.8,
+   "voz": true
+  }
+ ],
+ "xfade": 0.12,
+ "musica": {
+  "src": "MUS_futuro_soberano_mpb_rock",
+  "in": 20.0,
+  "gain": -22
+ },
+ "texts": [
+  {
+   "lines": [
+    "Amigos,"
+   ],
+   "start": 0.24,
+   "end": 0.64,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "vocês sabem"
+   ],
+   "start": 0.64,
+   "end": 2.1,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que Minas Gerais é"
+   ],
+   "start": 2.1,
+   "end": 4.3,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "o segundo ou primeiro"
+   ],
+   "start": 4.3,
+   "end": 5.5,
+   "y": 1180,
+   "size": 74,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "estado em reserva"
+   ],
+   "start": 5.5,
+   "end": 6.72,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de terra rara."
+   ],
+   "start": 6.72,
+   "end": 7.28,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Vocês sabem disso,"
+   ],
+   "start": 7.28,
+   "end": 7.92,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "né?"
+   ],
+   "start": 7.92,
+   "end": 8.18,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Sim!"
+   ],
+   "start": 8.18,
+   "end": 9.14,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Nós teremos zonas"
+   ],
+   "start": 9.38,
+   "end": 10.3,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "econômicas especiais,"
+   ],
+   "start": 10.3,
+   "end": 11.62,
+   "y": 1180,
+   "size": 75,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "ganhando as eleições,"
+   ],
+   "start": 11.62,
+   "end": 13.3,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "em parceria"
+   ],
+   "start": 13.3,
+   "end": 14.22,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "com muitas nações"
+   ],
+   "start": 14.22,
+   "end": 15.08,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "e muitas empresas,"
+   ],
+   "start": 15.08,
+   "end": 15.9,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "para fazer extração,"
+   ],
+   "start": 15.9,
+   "end": 17.5,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "processamento"
+   ],
+   "start": 17.5,
+   "end": 19.16,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de terras raras,"
+   ],
+   "start": 19.16,
+   "end": 20.24,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "para fazer"
+   ],
+   "start": 20.24,
+   "end": 20.94,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "os ímãs,"
+   ],
+   "start": 20.94,
+   "end": 21.72,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "para fazer"
+   ],
+   "start": 21.72,
+   "end": 22.36,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "as baterias,"
+   ],
+   "start": 22.36,
+   "end": 23.08,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "para fazer"
+   ],
+   "start": 23.08,
+   "end": 23.5,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "os drones,"
+   ],
+   "start": 23.5,
+   "end": 24.18,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "para fazer toda"
+   ],
+   "start": 24.18,
+   "end": 24.96,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "a cadeia produtiva"
+   ],
+   "start": 24.96,
+   "end": 26.0,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "em parceria,"
+   ],
+   "start": 26.0,
+   "end": 26.94,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "pode ser"
+   ],
+   "start": 26.94,
+   "end": 27.3,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "com a União Europeia,"
+   ],
+   "start": 27.3,
+   "end": 28.0,
+   "y": 1180,
+   "size": 75,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "com os Estados Unidos,"
+   ],
+   "start": 28.0,
+   "end": 28.52,
+   "y": 1180,
+   "size": 71,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "com a China,"
+   ],
+   "start": 28.52,
+   "end": 29.22,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "com o país"
+   ],
+   "start": 29.22,
+   "end": 29.82,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que for,"
+   ],
+   "start": 29.82,
+   "end": 30.4,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "nós vamos fazer."
+   ],
+   "start": 30.4,
+   "end": 31.59,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Os empregos,"
+   ],
+   "start": 31.59,
+   "end": 32.47,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "a fábrica"
+   ],
+   "start": 32.47,
+   "end": 33.49,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "de bateria para drone,"
+   ],
+   "start": 33.49,
+   "end": 35.01,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "a bateria"
+   ],
+   "start": 35.01,
+   "end": 35.85,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "para carro elétrico"
+   ],
+   "start": 35.85,
+   "end": 36.65,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "da Tesla,"
+   ],
+   "start": 36.65,
+   "end": 37.25,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "da BYD,"
+   ],
+   "start": 37.25,
+   "end": 37.97,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "tem que ser"
+   ],
+   "start": 37.97,
+   "end": 38.61,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "em Minas Gerais."
+   ],
+   "start": 38.61,
+   "end": 39.66,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  }
+ ],
+ "crf": 20
+}

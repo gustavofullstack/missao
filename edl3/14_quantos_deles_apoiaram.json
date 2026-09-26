@@ -6,6 +6,12 @@
    "png": "titles/14.png",
    "start": 0,
    "y": 200
+  },
+  {
+   "png": "titles/marca_ia_musica.png",
+   "start": 0,
+   "y": 112,
+   "fade_in": 0.2
   }
  ],
  "film": true,
@@ -531,5 +537,5 @@
    "shake": true
   }
  ],
- "crf": 18
+ "crf": 20
 }

@@ -17,6 +17,7 @@ FONT = "/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf"
 TONEMAP = ("zscale=t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,"
            "tonemap=mobius:desat=0,zscale=t=bt709:m=bt709:r=pc,format=gbrp16le")
 GRADES = {
+    "neutro": "null",  # vinheta gerada por IA: já vem graduada
     "noite": "vibrance=intensity=0.18,curves=master='0/0 0.07/0.045 0.5/0.5 0.88/0.9 1/1',"
              "colorbalance=bs=0.035:bm=0.01:rh=0.025:bh=-0.015",
     # plano geral escuro: mesma cor da "noite", sombras erguidas para a multidão aparecer
@@ -39,7 +40,7 @@ def run(cmd):
 
 
 def src_path(stem):
-    for ext in (".MOV", ".mov", ".mp4"):
+    for ext in (".MOV", ".mov", ".mp4", ".m4a", ".wav"):
         p = f"{ROOT}/src/{stem}{ext}"
         if os.path.exists(p):
             return p
@@ -52,13 +53,14 @@ def is_hdr(p):
     return trc in ("arib-std-b67", "smpte2084")
 
 
-def shot(s, grade):
-    """Renderiza (ou reaproveita do cache) um plano já graduado em 1080x1920/30p."""
+def shot(s, grade, S=1):
+    """Renderiza (ou reaproveita do cache) um plano já graduado em (1080*S)x(1920*S)/30p; S=2 é o master 4K."""
+    W, H = 1080 * S, 1920 * S
     p, speed = src_path(s["src"]), s.get("speed", 1)
     z0, z1 = s.get("zoom", [1, 1])
     g = GRADES[s.get("grade", grade)]
     key = hashlib.sha1(json.dumps([s["src"], s["in"], s["dur"], speed, z0, z1, g, TONEMAP,
-                                   s.get("focus")]).encode()).hexdigest()[:10]
+                                   s.get("focus"), S]).encode()).hexdigest()[:10]
     out = f"{ROOT}/seg/{s['src']}_{key}.mp4"
     if os.path.exists(out):
         return out
@@ -68,9 +70,9 @@ def shot(s, grade):
     if (z0, z1) != (1, 1):  # zoom feito na resolução 4K: sem o tremido do zoompan em 1080
         vf.append(f"zoompan=z='{z0}+({z1}-{z0})*on/{max(n - 1, 1)}':"
                   f"x='max(0,min(iw-iw/zoom,{fx}*iw-iw/zoom/2))':"
-                  f"y='max(0,min(ih-ih/zoom,{fy}*ih-ih/zoom/2))':d=1:s=1080x1920:fps={FPS}")
+                  f"y='max(0,min(ih-ih/zoom,{fy}*ih-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
     else:
-        vf.append("scale=1080:1920:flags=lanczos")
+        vf.append(f"scale={W}:{H}:flags=lanczos")
     vf += [TONEMAP if is_hdr(p) else "format=gbrp16le", g,
            "scale=out_color_matrix=bt709:out_range=tv:flags=lanczos", "format=yuv420p"]
     os.makedirs(f"{ROOT}/seg", exist_ok=True)
@@ -92,18 +94,25 @@ def alpha(a, b, f=0.2):
             f"if(lt(t,{b - f}),1,if(lt(t,{b}),({b}-t)/{f},0))))")
 
 
-def texts(edl, name):
+def texts(edl, name, S=1):
     vf = []
     for i, tx in enumerate(edl.get("texts", [])):
-        size, y0 = tx.get("size", 84), tx.get("y", 520)
+        size, y0 = tx.get("size", 84) * S, tx.get("y", 520) * S
         for j, line in enumerate(tx["lines"]):
             tf = f"{ROOT}/seg/{name}_t{i}_{j}.txt"
             open(tf, "w").write(line)
-            box = f"box=1:boxcolor=black@{tx['box']}:boxborderw=18:" if tx.get("box") else ""
+            box = (f"box=1:boxcolor={tx.get('boxcolor') or 'black@' + str(tx['box'])}:boxborderw={tx.get('pad', 18) * S}:"
+                   if tx.get("box") or tx.get("boxcolor") else "")
+            xl = "(w-text_w)/2"
+            if tx.get("shake"):  # batida do coro: treme 0,25 s na entrada
+                xl = f"'(w-text_w)/2+{9 * S}*sin(t*95)*lt(t-{tx['start']},0.25)'"
+            yl = y0 + j * int(size * 1.18)
+            if tx.get("anim") == "pop":  # entra subindo 26 px em 0,12 s: o "pulo" das legendas dos cortes grandes
+                yl = f"'{yl}+{26 * S}*max(0,1-(t-{tx['start']})/0.12)'"
             vf.append(f"drawtext=fontfile={tx.get('font', FONT)}:textfile={tf}:expansion=none:"
-                      f"fontsize={size}:fontcolor={tx.get('color', 'white')}:x=(w-text_w)/2:"
-                      f"y={y0 + j * int(size * 1.18)}:shadowx=0:shadowy=4:shadowcolor=black@0.6:"
-                      f"borderw={tx.get('border', 0)}:bordercolor={tx.get('bordercolor', 'black@0.35')}:{box}"
+                      f"fontsize={size}:fontcolor={tx.get('color', 'white')}:x={xl}:"
+                      f"y={yl}:shadowx=0:shadowy={tx.get('shadow', 4) * S}:shadowcolor=black@0.6:"
+                      f"borderw={tx.get('border', 0) * S}:bordercolor={tx.get('bordercolor', 'black@0.35')}:{box}"
                       f"alpha='{alpha(tx['start'], tx['end'], tx.get('fade', 0.2))}':"
                       f"enable='gte(t,{tx['start']})*lt(t,{tx['end']})'")  # meio-aberto: sem quadro duplo na troca
     return vf
@@ -170,12 +179,23 @@ def normalize(wav):
 
 
 def render(edl):
-    name, grade = edl["name"], edl.get("grade", "noite")
-    segs = [shot(s, grade) for s in edl["shots"]]
+    S = edl.get("escala", 1)
+    name, grade = edl["name"] + ("_4k" if S == 2 else ""), edl.get("grade", "noite")
+    segs = [shot(s, grade, S) for s in edl["shots"]]
     total = round(sum(s["dur"] for s in edl["shots"]), 3)
     lst = f"{ROOT}/seg/{name}.txt"
     open(lst, "w").write("".join(f"file '{p}'\n" for p in segs))
-    wav = normalize(audio_bed(edl, total, name))
+    wav = audio_bed(edl, total, name)
+    if edl.get("musica"):
+        m = edl["musica"]
+        mixed = wav.replace(".wav", "_mix.wav")
+        run(["ffmpeg", "-v", "error", "-y", "-i", wav, "-ss", f"{m.get('in', 0):.3f}", "-i", src_path(m["src"]),
+             "-filter_complex", f"[1:a]atrim=duration={total:.3f},asetpts=PTS-STARTPTS,aresample=48000,"
+             f"volume={m.get('gain', -16)}dB,afade=t=in:d={m.get('fade_in', 0.8)},"
+             f"afade=t=out:st={max(total - 1.5, 0):.3f}:d=1.5[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
+             "-map", "[a]", "-ac", "2", "-ar", "48000", mixed])
+        wav = mixed
+    wav = normalize(wav)
 
     vf, t = [], 0.0
     for s in edl["shots"]:  # flash de 3 quadros no corte marcado
@@ -185,17 +205,28 @@ def render(edl):
                 vf.append(f"drawbox=x=0:y=0:w=iw:h=ih:color=white@{a}:t=fill:"
                           f"enable='between(t,{t0:.4f},{t0 + 1 / FPS - 0.002:.4f})'")
         t += s["dur"]
-    vf += texts(edl, name) + ["format=yuv420p"]
+    if edl.get("film"):  # textura de cinema: grão temporal fino e vinheta suave
+        vf += [f"noise=alls={2 + S}:allf=t", "vignette=angle=PI/5"]  # 6 dava 30 Mbps em 1080p
+    vf += texts(edl, name, S) + ["format=yuv420p"]
     fo = min(0.8, total / 4)
     af = f"afade=t=in:d=0.15,afade=t=out:st={total - fo:.3f}:d={fo:.3f}"
     ovs = edl.get("overlays", [])
+    for o in ovs:  # título já desenhado na escala do master (titles/08@2x.png) ANTES de montar o filtro:
+        alt = o["png"].replace(".png", f"@{S}x.png")  # antes a troca vinha depois e o @2x era ampliado 2x de novo
+        if S > 1 and os.path.exists(f"{ROOT}/{alt}"):
+            o["png"] = alt
     if ovs:
         chain, prev = [f"[0:v]{','.join(vf[:-1]) or 'null'}[b0]"], "[b0]"
         for k, o in enumerate(ovs):
             a, b = o.get("start", 0), o.get("end", total)
-            chain.append(f"[{2 + k}:v]format=rgba,fade=t=in:st={a}:d=0.25:alpha=1,"
-                         f"fade=t=out:st={b - 0.25:.3f}:d=0.25:alpha=1[o{k}]")
-            chain.append(f"{prev}[o{k}]overlay=x={o.get('x', '(W-w)/2')}:y={o.get('y', 250)}:"
+            up = "" if S == 1 or "@" in o["png"] else f"scale=iw*{S}:ih*{S}:flags=lanczos,"
+            fi, fo_ = o.get("fade_in", 0.25), o.get("fade_out", 0.25)
+            slam = (f"scale=w='iw*(1+0.35*max(0,1-(t-{a})/0.18))':h=-1:eval=frame," if o.get("slam") else "")
+            chain.append(f"[{2 + k}:v]format=rgba,{up}{slam}fade=t=in:st={a}:d={fi}:alpha=1,"
+                         f"fade=t=out:st={b - fo_:.3f}:d={fo_}:alpha=1[o{k}]")
+            oy = o.get("y", 250)
+            oy = oy * S if isinstance(oy, (int, float)) else oy  # expressão ('(H-h)/2') vale como está
+            chain.append(f"{prev}[o{k}]overlay=x={o.get('x', '(W-w)/2')}:y={oy}:"
                          f"enable='between(t,{a},{b})'[b{k + 1}]")
             prev = f"[b{k + 1}]"
         fc = ";".join(chain) + f";{prev}format=yuv420p[v];[1:a]{af}[a]"
@@ -214,8 +245,9 @@ def render(edl):
     os.makedirs(f"{ROOT}/out", exist_ok=True)
     extra = sum((["-loop", "1", "-t", f"{total:.3f}", "-i", f"{ROOT}/{o['png']}"] for o in ovs), [])
     run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-i", wav, *extra,
-         "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "slow",
-         "-crf", str(edl.get("crf", 17)), "-profile:v", "high", "-level", "4.2", "-pix_fmt", "yuv420p", "-r", str(FPS),
+         "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-c:v", "libx264",
+         "-preset", "slow" if S == 1 else "medium", "-crf", str(edl.get("crf", 17) if S == 1 else 18),
+         "-profile:v", "high", "-level", "4.2" if S == 1 else "5.1", "-pix_fmt", "yuv420p", "-r", str(FPS),
          "-g", str(FPS * 2), "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
          "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-movflags", "+faststart",
          "-shortest", out])

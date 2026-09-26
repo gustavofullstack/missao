@@ -1,0 +1,454 @@
+{
+ "name": "17_a_rua_ta_gritando",
+ "cover": 9.0,
+ "film": true,
+ "shots": [
+  {
+   "src": "IMG_8464",
+   "in": 88.1,
+   "dur": 1.7,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "src": "IA_olho_onca",
+   "in": 4.2,
+   "dur": 2.2,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8464",
+   "in": 92.0,
+   "dur": 0.9,
+   "flash": true,
+   "zoom": [
+    1.75,
+    1.75
+   ],
+   "focus": [
+    0.5,
+    0.42
+   ]
+  },
+  {
+   "src": "IMG_8465",
+   "in": 140.0,
+   "dur": 3.36,
+   "speed": 1,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.48,
+    0.47
+   ]
+  },
+  {
+   "src": "IMG_8441",
+   "in": 9.0,
+   "dur": 1.344,
+   "speed": 1,
+   "grade": "fogo",
+   "flash": true
+  },
+  {
+   "src": "IMG_8443",
+   "in": 6.0,
+   "dur": 1.344,
+   "speed": 1,
+   "grade": "fogo"
+  },
+  {
+   "src": "IMG_8450",
+   "in": 15.0,
+   "dur": 1.344,
+   "speed": 1
+  },
+  {
+   "src": "IA_onca_fumaca",
+   "in": 2.2,
+   "dur": 1.344,
+   "speed": 1.0,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8470",
+   "in": 24.0,
+   "dur": 1.344,
+   "speed": 1
+  },
+  {
+   "src": "IMG_8472",
+   "in": 20.0,
+   "dur": 1.344,
+   "speed": 1
+  },
+  {
+   "src": "IMG_8464",
+   "in": 150.0,
+   "dur": 3.36,
+   "speed": 1,
+   "zoom": [
+    1.4,
+    1.4
+   ],
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "src": "IA_bandeira_lua",
+   "in": 1.5,
+   "dur": 3.36,
+   "speed": 0.8,
+   "grade": "neutro"
+  },
+  {
+   "src": "IMG_8468",
+   "in": 25.0,
+   "dur": 2.688,
+   "speed": 1,
+   "zoom": [
+    1.45,
+    1.45
+   ],
+   "focus": [
+    0.55,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8449",
+   "in": 140.0,
+   "dur": 7.568,
+   "speed": 1,
+   "grade": "noite_clara"
+  }
+ ],
+ "overlays": [
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 1.7,
+   "end": 3.9,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 12.19,
+   "end": 13.54,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_img_ia.png",
+   "start": 19.58,
+   "end": 22.94,
+   "y": 1650,
+   "fade_in": 0.1,
+   "fade_out": 0.1
+  },
+  {
+   "png": "titles/marca_selo_ia.png",
+   "start": 4.8,
+   "end": 8.8,
+   "y": 1720
+  },
+  {
+   "png": "titles/marca_bandeira.png",
+   "start": 8.35,
+   "end": 8.91,
+   "y": 0,
+   "slam": true,
+   "fade_in": 0.02,
+   "fade_out": 0.05
+  },
+  {
+   "png": "titles/marca_fim.png",
+   "start": 31.2,
+   "y": 0,
+   "fade_in": 0.3
+  },
+  {
+   "png": "titles/marca_ia_total.png",
+   "start": 0,
+   "y": 112,
+   "fade_in": 0.2
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8464",
+   "in": 88.1,
+   "dur": 4.95,
+   "voz": true,
+   "gain": 4
+  },
+  {
+   "src": "MUS_mercadores_da_miseria",
+   "in": 113.25,
+   "gain": -2
+  }
+ ],
+ "xfade": 0.15,
+ "texts": [
+  {
+   "lines": [
+    "Quantos deles"
+   ],
+   "start": 0.24,
+   "end": 0.86,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "apoiaram?"
+   ],
+   "start": 0.86,
+   "end": 1.75,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "NENHUM!"
+   ],
+   "start": 4.0,
+   "end": 4.78,
+   "y": 1120,
+   "size": 110,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "A RUA TÁ GRITANDO"
+   ],
+   "start": 4.93,
+   "end": 7.83,
+   "y": 1120,
+   "size": 92,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "MISSÃO!"
+   ],
+   "start": 8.35,
+   "end": 9.85,
+   "y": 1120,
+   "size": 118,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "FORA CORRUPÇÃO!"
+   ],
+   "start": 9.85,
+   "end": 11.47,
+   "y": 1120,
+   "size": 96,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "MISSÃO!"
+   ],
+   "start": 11.47,
+   "end": 12.89,
+   "y": 1120,
+   "size": 118,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "FORA LADRÕES!"
+   ],
+   "start": 12.89,
+   "end": 14.43,
+   "y": 1120,
+   "size": 96,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "MISSÃO!"
+   ],
+   "start": 14.43,
+   "end": 15.19,
+   "y": 1120,
+   "size": 118,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "FORA CORRUPÇÃO!"
+   ],
+   "start": 15.19,
+   "end": 16.83,
+   "y": 1120,
+   "size": 96,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "MISSÃO!"
+   ],
+   "start": 16.83,
+   "end": 17.95,
+   "y": 1120,
+   "size": 118,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "A MISSÃO CONTINUA"
+   ],
+   "start": 26.39,
+   "end": 28.09,
+   "y": 1120,
+   "size": 96,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "FORA LADRÕES!"
+   ],
+   "start": 28.09,
+   "end": 29.19,
+   "y": 1120,
+   "size": 96,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  },
+  {
+   "lines": [
+    "FORA CORRUPÇÃO!"
+   ],
+   "start": 29.19,
+   "end": 30.45,
+   "y": 1120,
+   "size": 96,
+   "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf",
+   "boxcolor": "0xFCBE26",
+   "pad": 22,
+   "border": 0,
+   "shadow": 0,
+   "fade": 0.04,
+   "anim": "pop",
+   "shake": true
+  }
+ ],
+ "crf": 20
+}
