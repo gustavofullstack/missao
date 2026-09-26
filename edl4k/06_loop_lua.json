@@ -1,0 +1,20 @@
+{
+ "name": "06_loop_lua",
+ "cover": 1.0,
+ "loop": 0.8,
+ "shots": [
+  {
+   "src": "IMG_8453",
+   "in": 35.0,
+   "dur": 6.0,
+   "speed": 0.3
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8461",
+   "in": 2.0
+  }
+ ],
+ "escala": 2
+}

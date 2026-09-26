@@ -1,0 +1,451 @@
+{
+  "name": "14_mercadores_da_miseria_clipe",
+  "escala": 2,
+  "cover": 1.0,
+  "film": true,
+  "shots": [
+    {
+      "src": "IMG_8453",
+      "in": 34.0,
+      "dur": 2.97,
+      "speed": 0.3,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8453",
+      "in": 50.0,
+      "dur": 3.0,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8446",
+      "in": 0.5,
+      "dur": 3.0,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8443",
+      "in": 29.0,
+      "dur": 3.01,
+      "speed": 0.25,
+      "grade": "fogo_quente"
+    },
+    {
+      "src": "IMG_8443",
+      "in": 3.0,
+      "dur": 2.0,
+      "speed": 0.5,
+      "grade": "fogo"
+    },
+    {
+      "src": "IMG_8441",
+      "in": 0.0,
+      "dur": 2.02,
+      "speed": 0.5,
+      "grade": "fogo",
+      "flash": true
+    },
+    {
+      "src": "IMG_8444",
+      "in": 26.4,
+      "dur": 1.98,
+      "speed": 0.5,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8448",
+      "in": 2.0,
+      "dur": 2.02,
+      "zoom": [
+        1.12,
+        1.0
+      ],
+      "grade": "noite_clara",
+      "flash": true
+    },
+    {
+      "src": "IMG_8460",
+      "in": 14.0,
+      "dur": 1.98,
+      "speed": 0.5,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8470",
+      "in": 12.5,
+      "dur": 1.03,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8472",
+      "in": 11.09,
+      "dur": 1.98,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8468",
+      "in": 10.0,
+      "dur": 0.99,
+      "speed": 0.5,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8453",
+      "in": 35.0,
+      "dur": 2.0,
+      "speed": 0.3,
+      "flash": true,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8443",
+      "in": 27.0,
+      "dur": 2.02,
+      "speed": 0.25,
+      "grade": "fogo_quente"
+    },
+    {
+      "src": "IMG_8443",
+      "in": 26.9,
+      "dur": 3.5,
+      "speed": 0.25,
+      "grade": "fogo_quente"
+    },
+    {
+      "src": "IMG_8444",
+      "in": 26.5,
+      "dur": 3.0,
+      "speed": 0.25,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8451",
+      "in": 1.0,
+      "dur": 3.26,
+      "speed": 0.25,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8460",
+      "in": 14.0,
+      "dur": 3.0,
+      "speed": 0.25,
+      "flash": true,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8453",
+      "in": 37.8,
+      "dur": 2.5,
+      "speed": 0.3,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8441",
+      "in": 0.0,
+      "dur": 2.3,
+      "speed": 0.5,
+      "grade": "fogo"
+    },
+    {
+      "src": "IMG_8443",
+      "in": 3.0,
+      "dur": 2.05,
+      "speed": 0.5,
+      "grade": "fogo",
+      "flash": true
+    },
+    {
+      "src": "IMG_8443",
+      "in": 26.0,
+      "dur": 2.74,
+      "speed": 0.5,
+      "grade": "fogo_quente"
+    },
+    {
+      "src": "IMG_8441",
+      "in": 5.5,
+      "dur": 2.35,
+      "grade": "fogo",
+      "flash": true
+    },
+    {
+      "src": "IMG_8443",
+      "in": 33.0,
+      "dur": 2.56,
+      "speed": 0.5,
+      "grade": "fogo_quente"
+    },
+    {
+      "src": "IMG_8448",
+      "in": 2.0,
+      "dur": 5.29,
+      "zoom": [
+        1.45,
+        1.0
+      ],
+      "grade": "noite_clara"
+    },
+    {
+      "src": "IMG_8449",
+      "in": 25.0,
+      "dur": 3.04,
+      "flash": true,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8455",
+      "in": 9.0,
+      "dur": 2.67,
+      "speed": 0.3,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8465",
+      "in": 31.6,
+      "dur": 5.35,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8455",
+      "in": 85.4,
+      "dur": 9.4,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8470",
+      "in": 16.0,
+      "dur": 2.5,
+      "speed": 0.5,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8453",
+      "in": 17.5,
+      "dur": 4.1,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8445",
+      "in": 29.0,
+      "dur": 4.7,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8465",
+      "in": 176.2,
+      "dur": 4.0,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8465",
+      "in": 49.8,
+      "dur": 2.0,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8457",
+      "in": 19.0,
+      "dur": 4.0,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8464",
+      "in": 10.4,
+      "dur": 1.8,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8468",
+      "in": 14.0,
+      "dur": 1.8,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8464",
+      "in": 14.0,
+      "dur": 4.4,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8446",
+      "in": 28.0,
+      "dur": 2.5,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8445",
+      "in": 4.0,
+      "dur": 2.5,
+      "speed": 0.5,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8464",
+      "in": 23.4,
+      "dur": 5.6,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8464",
+      "in": 29.0,
+      "dur": 2.0,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8470",
+      "in": 16.0,
+      "dur": 1.5,
+      "speed": 0.5,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8464",
+      "in": 32.5,
+      "dur": 1.7,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8453",
+      "in": 35.0,
+      "dur": 1.75,
+      "speed": 0.3,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8464",
+      "in": 41.4,
+      "dur": 4.4,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8465",
+      "in": 51.5,
+      "dur": 8.7,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.48,
+        0.47
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8465",
+      "in": 71.3,
+      "dur": 4.0,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.48,
+        0.47
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8449",
+      "in": 25.0,
+      "dur": 3.0,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8465",
+      "in": 78.3,
+      "dur": 5.2,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.48,
+        0.47
+      ],
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8444",
+      "in": 26.4,
+      "dur": 2.5,
+      "speed": 0.5,
+      "grade": "noite"
+    },
+    {
+      "src": "IMG_8465",
+      "in": 86.0,
+      "dur": 4.807,
+      "zoom": [
+        1.4,
+        1.4
+      ],
+      "focus": [
+        0.48,
+        0.47
+      ],
+      "grade": "noite"
+    }
+  ],
+  "audio": [
+    {
+      "src": "Mercadores_da_Miseria",
+      "in": 0,
+      "gain": 0
+    }
+  ],
+  "crf": 18
+}

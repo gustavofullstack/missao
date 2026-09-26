@@ -1,0 +1,184 @@
+{
+ "name": "08_e_14_ou_nada",
+ "cover": 5.0,
+ "overlays": [
+  {
+   "png": "titles/08.png",
+   "start": 0,
+   "y": 230
+  }
+ ],
+ "shots": [
+  {
+   "src": "IMG_8457",
+   "in": 0.5,
+   "dur": 8.1,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8457",
+   "in": 13.8,
+   "dur": 3.7,
+   "zoom": [
+    1.3,
+    1.3
+   ],
+   "focus": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "src": "IMG_8470",
+   "in": 12.5,
+   "dur": 2.5,
+   "speed": 0.5,
+   "flash": true
+  },
+  {
+   "src": "IMG_8444",
+   "in": 26.5,
+   "dur": 2.5,
+   "speed": 0.5
+  },
+  {
+   "src": "IMG_8457",
+   "in": 22.5,
+   "dur": 2.5
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8457",
+   "in": 0.5,
+   "dur": 8.5,
+   "voz": true
+  },
+  {
+   "src": "IMG_8457",
+   "in": 13.8
+  }
+ ],
+ "texts": [
+  {
+   "lines": [
+    "E eu quero"
+   ],
+   "start": 0.18,
+   "end": 1.2,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "deixar muito,"
+   ],
+   "start": 1.2,
+   "end": 2.04,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "muito,"
+   ],
+   "start": 2.04,
+   "end": 2.36,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "muito claro"
+   ],
+   "start": 2.36,
+   "end": 2.92,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "para todo mundo."
+   ],
+   "start": 2.92,
+   "end": 3.93,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "É 14 OU NADA!"
+   ],
+   "start": 3.93,
+   "end": 5.53,
+   "y": 1100,
+   "size": 96,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "É 14 OU NADA!"
+   ],
+   "start": 5.93,
+   "end": 7.53,
+   "y": 1100,
+   "size": 96,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "14 OU NADA!"
+   ],
+   "start": 8.25,
+   "end": 19.3,
+   "y": 1100,
+   "size": 96,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0
+  }
+ ],
+ "crf": 20
+}

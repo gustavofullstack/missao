@@ -1,0 +1,337 @@
+{
+ "name": "15_o_que_a_the_economist_escreveu",
+ "cover": 3.0,
+ "film": true,
+ "overlays": [
+  {
+   "png": "titles/15.png",
+   "start": 0,
+   "y": 200
+  },
+  {
+   "png": "titles/card_economist.png",
+   "start": 16.5,
+   "y": 640,
+   "fade_in": 0.35
+  }
+ ],
+ "shots": [
+  {
+   "src": "IMG_8463",
+   "in": 3.7,
+   "dur": 4.3,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.48,
+    0.42
+   ]
+  },
+  {
+   "src": "IMG_8449",
+   "in": 40.0,
+   "dur": 1.2,
+   "grade": "noite_clara"
+  },
+  {
+   "src": "IMG_8463",
+   "in": 9.2,
+   "dur": 3.1,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.48,
+    0.42
+   ]
+  },
+  {
+   "src": "IMG_8463",
+   "in": 16.7,
+   "dur": 7.7,
+   "zoom": [
+    1.35,
+    1.35
+   ],
+   "focus": [
+    0.48,
+    0.42
+   ]
+  },
+  {
+   "src": "IMG_8453",
+   "in": 37.8,
+   "dur": 6.2,
+   "speed": 0.3,
+   "zoom": [
+    1.0,
+    1.06
+   ]
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8463",
+   "in": 3.7,
+   "dur": 8.72,
+   "voz": true
+  },
+  {
+   "src": "IMG_8463",
+   "in": 16.7,
+   "voz": true
+  }
+ ],
+ "xfade": 0.12,
+ "musica": {
+  "src": "MUS_futuro_soberano_mpb_rock",
+  "in": 6.0,
+  "gain": -21
+ },
+ "texts": [
+  {
+   "lines": [
+    "O editorial deixou"
+   ],
+   "start": 0.12,
+   "end": 1.52,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "muito claro,"
+   ],
+   "start": 1.52,
+   "end": 2.2,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "o Brasil está"
+   ],
+   "start": 2.2,
+   "end": 3.1,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "virando as costas"
+   ],
+   "start": 3.1,
+   "end": 4.04,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "pro futuro."
+   ],
+   "start": 4.04,
+   "end": 4.76,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "O Brasil está"
+   ],
+   "start": 4.76,
+   "end": 5.64,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "assim pra vocês,"
+   ],
+   "start": 5.64,
+   "end": 6.98,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "virando as costas"
+   ],
+   "start": 7.18,
+   "end": 8.22,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "pra vocês."
+   ],
+   "start": 8.22,
+   "end": 8.74,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "Eles afirmam"
+   ],
+   "start": 8.74,
+   "end": 9.36,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que é um candidato"
+   ],
+   "start": 9.36,
+   "end": 10.84,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "que reúne as"
+   ],
+   "start": 10.84,
+   "end": 11.96,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "condições para salvar"
+   ],
+   "start": 11.96,
+   "end": 13.58,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "o Brasil"
+   ],
+   "start": 13.58,
+   "end": 14.26,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "e tornar o Brasil"
+   ],
+   "start": 14.26,
+   "end": 15.52,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "uma grande potência."
+   ],
+   "start": 15.52,
+   "end": 16.45,
+   "y": 1180,
+   "size": 76,
+   "color": "#FCBE26",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  }
+ ],
+ "crf": 18
+}

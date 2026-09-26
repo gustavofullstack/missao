@@ -1,0 +1,123 @@
+{
+ "name": "05_o_brasil_que_importa_esta_aqui",
+ "cover": 10.2,
+ "audio": "sync",
+ "shots": [
+  {
+   "src": "IMG_8465",
+   "in": 31.6,
+   "dur": 5.35
+  },
+  {
+   "src": "IMG_8455",
+   "in": 85.4,
+   "dur": 9.4
+  },
+  {
+   "src": "IMG_8470",
+   "in": 16.0,
+   "dur": 2.5,
+   "speed": 0.5
+  }
+ ],
+ "texts": [
+  {
+   "lines": [
+    "O BRASIL É NOSSO!"
+   ],
+   "start": 0.24,
+   "end": 2.4,
+   "y": 1150,
+   "size": 92,
+   "color": "#FFD400",
+   "border": 3,
+   "fade": 0
+  },
+  {
+   "lines": [
+    "O BRASIL É NOSSO!"
+   ],
+   "start": 3.06,
+   "end": 5.3,
+   "y": 1150,
+   "size": 92,
+   "color": "#FFD400",
+   "border": 3,
+   "fade": 0
+  },
+  {
+   "lines": [
+    "E graças a Deus eu estou"
+   ],
+   "start": 5.47,
+   "end": 7.09,
+   "y": 1180,
+   "size": 64,
+   "color": "white",
+   "border": 3,
+   "fade": 0
+  },
+  {
+   "lines": [
+    "diante de vocês,"
+   ],
+   "start": 7.09,
+   "end": 8.1,
+   "y": 1180,
+   "size": 64,
+   "color": "white",
+   "border": 3,
+   "fade": 0
+  },
+  {
+   "lines": [
+    "porque o Brasil",
+    "que importa"
+   ],
+   "start": 8.15,
+   "end": 9.73,
+   "y": 1110,
+   "size": 76,
+   "color": "#FFD400",
+   "border": 3,
+   "fade": 0
+  },
+  {
+   "lines": [
+    "está aqui",
+    "na minha frente"
+   ],
+   "start": 9.73,
+   "end": 10.79,
+   "y": 1110,
+   "size": 76,
+   "color": "#FFD400",
+   "border": 3,
+   "fade": 0
+  },
+  {
+   "lines": [
+    "em Uberlândia."
+   ],
+   "start": 10.79,
+   "end": 12.2,
+   "y": 1150,
+   "size": 76,
+   "color": "#FFD400",
+   "border": 3,
+   "fade": 0
+  },
+  {
+   "lines": [
+    "Uberlândia · 25.09.2026"
+   ],
+   "start": 15.2,
+   "end": 17.25,
+   "y": 1360,
+   "size": 46,
+   "font": "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf",
+   "fade": 0.3
+  }
+ ],
+ "escala": 2
+}

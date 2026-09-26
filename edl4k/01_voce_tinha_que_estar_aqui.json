@@ -1,0 +1,105 @@
+{
+ "name": "01_voce_tinha_que_estar_aqui",
+ "cover": 1.0,
+ "shots": [
+  {
+   "src": "IMG_8443",
+   "in": 3.0,
+   "dur": 2.0,
+   "speed": 0.5,
+   "grade": "fogo"
+  },
+  {
+   "src": "IMG_8441",
+   "in": 0.0,
+   "dur": 2.02,
+   "speed": 0.5,
+   "grade": "fogo",
+   "flash": true
+  },
+  {
+   "src": "IMG_8444",
+   "in": 26.4,
+   "dur": 1.98,
+   "speed": 0.5
+  },
+  {
+   "src": "IMG_8448",
+   "in": 2.0,
+   "dur": 2.02,
+   "zoom": [
+    1.12,
+    1.0
+   ],
+   "grade": "noite_clara",
+   "flash": true
+  },
+  {
+   "src": "IMG_8460",
+   "in": 14.0,
+   "dur": 1.98,
+   "speed": 0.5
+  },
+  {
+   "src": "IMG_8470",
+   "in": 12.5,
+   "dur": 1.03
+  },
+  {
+   "src": "IMG_8472",
+   "in": 11.09,
+   "dur": 1.98
+  },
+  {
+   "src": "IMG_8468",
+   "in": 10.0,
+   "dur": 0.99,
+   "speed": 0.5
+  },
+  {
+   "src": "IMG_8453",
+   "in": 35.0,
+   "dur": 2.0,
+   "speed": 0.3,
+   "flash": true
+  },
+  {
+   "src": "IMG_8443",
+   "in": 27.0,
+   "dur": 2.02,
+   "speed": 0.25,
+   "grade": "fogo_quente"
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8472",
+   "in": 0.06
+  }
+ ],
+ "texts": [
+  {
+   "lines": [
+    "Você tinha que",
+    "estar aqui."
+   ],
+   "start": 0.15,
+   "end": 1.9,
+   "y": 520,
+   "size": 82,
+   "border": 3
+  },
+  {
+   "lines": [
+    "Uberlândia · 25.09.2026"
+   ],
+   "start": 16.3,
+   "end": 18.0,
+   "y": 1360,
+   "size": 46,
+   "font": "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf",
+   "fade": 0.3
+  }
+ ],
+ "escala": 2
+}

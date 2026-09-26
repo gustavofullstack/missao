@@ -1,0 +1,58 @@
+{
+ "name": "02_tem_noite_que_merece_camera_lenta",
+ "cover": 1.2,
+ "shots": [
+  {
+   "src": "IMG_8443",
+   "in": 26.9,
+   "dur": 3.5,
+   "speed": 0.25,
+   "grade": "fogo_quente"
+  },
+  {
+   "src": "IMG_8444",
+   "in": 26.5,
+   "dur": 3.0,
+   "speed": 0.25
+  },
+  {
+   "src": "IMG_8451",
+   "in": 1.0,
+   "dur": 3.26,
+   "speed": 0.25
+  },
+  {
+   "src": "IMG_8460",
+   "in": 14.0,
+   "dur": 3.0,
+   "speed": 0.25,
+   "flash": true
+  },
+  {
+   "src": "IMG_8453",
+   "in": 37.8,
+   "dur": 2.5,
+   "speed": 0.3
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8461",
+   "in": 0.9
+  }
+ ],
+ "texts": [
+  {
+   "lines": [
+    "Tem noite que",
+    "merece câmera lenta."
+   ],
+   "start": 0.2,
+   "end": 2.9,
+   "y": 1280,
+   "size": 82,
+   "border": 3
+  }
+ ],
+ "escala": 2
+}

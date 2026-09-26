@@ -1,0 +1,58 @@
+{
+ "name": "04_olha_o_tamanho_disso",
+ "cover": 4.6,
+ "shots": [
+  {
+   "src": "IMG_8448",
+   "in": 2.0,
+   "dur": 5.29,
+   "zoom": [
+    1.45,
+    1.0
+   ],
+   "grade": "noite_clara"
+  },
+  {
+   "src": "IMG_8449",
+   "in": 25.0,
+   "dur": 3.04,
+   "flash": true
+  },
+  {
+   "src": "IMG_8455",
+   "in": 9.0,
+   "dur": 2.67,
+   "speed": 0.3
+  }
+ ],
+ "audio": [
+  {
+   "src": "IMG_8453",
+   "in": 17.5
+  }
+ ],
+ "texts": [
+  {
+   "lines": [
+    "Olha o tamanho",
+    "disso."
+   ],
+   "start": 0.2,
+   "end": 2.9,
+   "y": 1200,
+   "size": 82,
+   "border": 3
+  },
+  {
+   "lines": [
+    "Uberlândia · 25.09.2026"
+   ],
+   "start": 9.0,
+   "end": 11.0,
+   "y": 1360,
+   "size": 46,
+   "font": "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf",
+   "fade": 0.3
+  }
+ ]
+}

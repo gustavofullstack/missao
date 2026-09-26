@@ -1,0 +1,112 @@
+{
+ "name": "13_o_que_a_praca_gritou",
+ "cover": 1.0,
+ "overlays": [
+  {
+   "png": "titles/13.png",
+   "start": 0,
+   "y": 230
+  }
+ ],
+ "audio": "sync",
+ "shots": [
+  {
+   "src": "IMG_8453",
+   "in": 17.5,
+   "dur": 4.1
+  },
+  {
+   "src": "IMG_8445",
+   "in": 29.0,
+   "dur": 4.7
+  },
+  {
+   "src": "IMG_8465",
+   "in": 176.2,
+   "dur": 4.0
+  },
+  {
+   "src": "IMG_8465",
+   "in": 49.8,
+   "dur": 2.0
+  },
+  {
+   "src": "IMG_8457",
+   "in": 19.0,
+   "dur": 4.0
+  }
+ ],
+ "texts": [
+  {
+   "lines": [
+    "MISSÃO!"
+   ],
+   "start": 0.15,
+   "end": 4.0,
+   "y": 1080,
+   "size": 96,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "EU VOTO 14!"
+   ],
+   "start": 4.25,
+   "end": 8.7,
+   "y": 1080,
+   "size": 84,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "RENAN!"
+   ],
+   "start": 8.95,
+   "end": 12.7,
+   "y": 1080,
+   "size": 96,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "O BRASIL É NOSSO!"
+   ],
+   "start": 12.95,
+   "end": 14.7,
+   "y": 1080,
+   "size": 70,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "14 OU NADA!"
+   ],
+   "start": 14.95,
+   "end": 18.7,
+   "y": 1080,
+   "size": 84,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0
+  }
+ ],
+ "crf": 20
+}

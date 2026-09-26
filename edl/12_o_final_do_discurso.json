@@ -1,0 +1,451 @@
+{
+ "name": "12_o_final_do_discurso",
+ "cover": 3.0,
+ "overlays": [
+  {
+   "png": "titles/12.png",
+   "start": 0,
+   "y": 230
+  }
+ ],
+ "shots": [
+  {
+   "src": "IMG_8468",
+   "in": 13.2,
+   "dur": 5.0,
+   "zoom": [
+    1.45,
+    1.45
+   ],
+   "focus": [
+    0.55,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8443",
+   "in": 27.0,
+   "dur": 2.5,
+   "speed": 0.25,
+   "grade": "fogo_quente"
+  },
+  {
+   "src": "IMG_8468",
+   "in": 20.7,
+   "dur": 5.3,
+   "zoom": [
+    1.45,
+    1.45
+   ],
+   "focus": [
+    0.55,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8470",
+   "in": 12.5,
+   "dur": 2.0,
+   "speed": 0.5
+  },
+  {
+   "src": "IMG_8468",
+   "in": 28.0,
+   "dur": 2.0,
+   "zoom": [
+    1.45,
+    1.45
+   ],
+   "focus": [
+    0.55,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8468",
+   "in": 32.88,
+   "dur": 3.7,
+   "zoom": [
+    1.45,
+    1.45
+   ],
+   "focus": [
+    0.55,
+    0.5
+   ]
+  },
+  {
+   "src": "IMG_8453",
+   "in": 37.8,
+   "dur": 2.85,
+   "speed": 0.3
+  }
+ ],
+ "xfade": 0.12,
+ "audio": [
+  {
+   "src": "IMG_8468",
+   "in": 13.2,
+   "dur": 16.92,
+   "voz": true
+  },
+  {
+   "src": "IMG_8468",
+   "in": 32.88,
+   "voz": true
+  }
+ ],
+ "texts": [
+  {
+   "lines": [
+    "Minas tem"
+   ],
+   "start": 0.2,
+   "end": 0.94,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "um futuro glorioso,"
+   ],
+   "start": 0.94,
+   "end": 1.9,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "e vocês como"
+   ],
+   "start": 1.9,
+   "end": 2.84,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "brasileiros têm"
+   ],
+   "start": 2.84,
+   "end": 3.38,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "que usufruir disso."
+   ],
+   "start": 3.38,
+   "end": 4.3,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "Não deixe quem"
+   ],
+   "start": 4.3,
+   "end": 5.3,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "trai vocês"
+   ],
+   "start": 5.3,
+   "end": 5.8,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "com a China,"
+   ],
+   "start": 5.8,
+   "end": 6.82,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "ou quem trai"
+   ],
+   "start": 6.82,
+   "end": 7.52,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "vocês"
+   ],
+   "start": 7.52,
+   "end": 7.82,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "com os Estados Unidos,"
+   ],
+   "start": 7.82,
+   "end": 8.76,
+   "y": 1180,
+   "size": 71,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "destruir o futuro"
+   ],
+   "start": 8.76,
+   "end": 9.64,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "incrível que Minas"
+   ],
+   "start": 9.64,
+   "end": 10.48,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "vai ter."
+   ],
+   "start": 10.48,
+   "end": 10.8,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "O Brasil é"
+   ],
+   "start": 10.8,
+   "end": 11.64,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "dos brasileiros,"
+   ],
+   "start": 11.64,
+   "end": 12.42,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "a terra rara"
+   ],
+   "start": 12.42,
+   "end": 13.42,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "dos mineiros…"
+   ],
+   "start": 13.42,
+   "end": 14.7,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "o nosso número"
+   ],
+   "start": 15.42,
+   "end": 16.2,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "é 14."
+   ],
+   "start": 16.2,
+   "end": 16.86,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "O Brasil,"
+   ],
+   "start": 16.86,
+   "end": 17.64,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "Minas Gerais,"
+   ],
+   "start": 17.64,
+   "end": 18.38,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "isso é parte"
+   ],
+   "start": 18.38,
+   "end": 18.8,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "da solução."
+   ],
+   "start": 18.8,
+   "end": 19.58,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  },
+  {
+   "lines": [
+    "Muito obrigado."
+   ],
+   "start": 19.58,
+   "end": 20.59,
+   "y": 1180,
+   "size": 76,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 5,
+   "bordercolor": "black",
+   "fade": 0
+  }
+ ],
+ "crf": 20
+}

@@ -1,0 +1,117 @@
+{
+ "name": "09_ei_globo_chama_o_renan",
+ "cover": 3.0,
+ "overlays": [
+  {
+   "png": "titles/09.png",
+   "start": 0,
+   "y": 230
+  }
+ ],
+ "audio": "sync",
+ "shots": [
+  {
+   "src": "IMG_8448",
+   "in": 26.8,
+   "dur": 2.2
+  },
+  {
+   "src": "IMG_8460",
+   "in": 0.0,
+   "dur": 7.0
+  }
+ ],
+ "texts": [
+  {
+   "lines": [
+    "EI, GLOBO,"
+   ],
+   "start": 0.16,
+   "end": 0.8,
+   "y": 1060,
+   "size": 96,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "CHAMA O RENAN!"
+   ],
+   "start": 0.8,
+   "end": 2.2,
+   "y": 1060,
+   "size": 93,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "EI, GLOBO,"
+   ],
+   "start": 2.2,
+   "end": 2.84,
+   "y": 1060,
+   "size": 96,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "CHAMA O RENAN!"
+   ],
+   "start": 2.84,
+   "end": 4.32,
+   "y": 1060,
+   "size": 93,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "EI, GLOBO,"
+   ],
+   "start": 4.32,
+   "end": 5.38,
+   "y": 1060,
+   "size": 96,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  },
+  {
+   "lines": [
+    "CHAMA O RENAN!"
+   ],
+   "start": 5.38,
+   "end": 6.2,
+   "y": 1060,
+   "size": 93,
+   "color": "#FFE11A",
+   "font": "/usr/share/fonts/opentype/montserrat/Montserrat-ExtraBold.otf",
+   "border": 6,
+   "bordercolor": "black",
+   "fade": 0.06,
+   "anim": "pop"
+  }
+ ],
+ "escala": 2
+}
