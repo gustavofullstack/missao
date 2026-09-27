@@ -1,0 +1,54 @@
+{
+ "json3": "src/XW2j2I4r-yY.pt.json3",
+ "video": "XW2j2I4r-yY.mp4",
+ "credito": "PARTIDO MISSÃO · CANAL OFICIAL NO YOUTUBE",
+ "musica": "mus/MUS_missao_fora_ladroes.m4a",
+ "musica_vol": 0.22,
+ "cortes": [
+  {
+   "nome": "93_a_historia_e_sobre_a_gente",
+   "titulo": "A HISTÓRIA É\\NSOBRE A GENTE",
+   "fx": 0.42,
+   "trechos": [
+    [
+     "E a gente sempre adotou o caminho difícil",
+     "fomos negados pelos adversários"
+    ],
+    [
+     "A história é sobre a gente",
+     "a história que nós vamos escrever"
+    ],
+    [
+     "A história não será sobre nossos inimigos",
+     "fazer o que é certo na hora certa"
+    ]
+   ]
+  },
+  {
+   "nome": "94_a_vanguarda",
+   "titulo": "A HISTÓRIA É ESCRITA\\NPOR UMA VANGUARDA",
+   "fx": 0.42,
+   "trechos": [
+    [
+     "Foram das pessoas que tiveram coragem",
+     "da minha geração"
+    ],
+    [
+     "não é sobre a vitória da maioria",
+     "que toma as decisões certas na hora certa"
+    ]
+   ]
+  },
+  {
+   "nome": "95_originais_com_nossas_cores",
+   "titulo": "SEJA ORIGINAL\\NCOM AS NOSSAS CORES",
+   "fx": 0.42,
+   "trechos": [
+    [
+     "Se você é um jovem que tá",
+     "vai colocar o nome na história"
+    ]
+   ]
+  }
+ ]
+}

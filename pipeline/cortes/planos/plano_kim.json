@@ -1,0 +1,63 @@
+{
+ "json3": "src/o5XcJYLUAY4.pt.json3",
+ "video": "o5XcJYLUAY4.mp4",
+ "credito": "KIM KATAGUIRI · CANAL OFICIAL NO YOUTUBE",
+ "musica": "mus/MUS_energia_de_luta_rap_rock.m4a",
+ "musica_vol": 0.22,
+ "troca": {
+  "R": "",
+  "Coopero": "Ricupero",
+  "Coopero,": "Ricupero",
+  "Alcen": "Alceni",
+  "Agrives": "Hargreaves",
+  "Hargrieves": "Hargreaves",
+  "Damar": "Itamar"
+ },
+ "cortes": [
+  {
+   "nome": "90_inflacao_do_escandalo",
+   "titulo": "A INFLAÇÃO\\NDO ESCÂNDALO",
+   "fx": 0.5,
+   "trechos": [
+    [
+     "Sabe o que o Brasil mais perdeu",
+     "hoje não é nem notícia"
+    ],
+    [
+     "E tem um mecanismo perverso nisso",
+     "uma plateia de palhaços"
+    ],
+    [
+     "Nós tínhamos escândalo sim",
+     "ninguém mais vai achar absurdo"
+    ]
+   ]
+  },
+  {
+   "nome": "91_uma_frase_derrubava_ministro",
+   "titulo": "UMA FRASE\\NDERRUBAVA MINISTRO",
+   "fx": 0.5,
+   "trechos": [
+    [
+     "Agora vem o meu exemplo",
+     "Você consegue imaginar isso acontecendo hoje"
+    ]
+   ]
+  },
+  {
+   "nome": "92_nao_e_esquerda_ou_direita",
+   "titulo": "NÃO É ESQUERDA\\NOU DIREITA",
+   "fx": 0.5,
+   "trechos": [
+    [
+     "Isso não é uma discussão sobre esquerda ou direita",
+     "normalizado em pequenas doses"
+    ],
+    [
+     "A única chance de salvar",
+     "voltar a se indignar"
+    ]
+   ]
+  }
+ ]
+}

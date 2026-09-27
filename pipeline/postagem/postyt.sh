@@ -19,6 +19,8 @@ $E $P "document.querySelector(\"tp-yt-paper-radio-button[name=PUBLIC]\").click()
 # espera o envio acabar (botão Publicar habilitado)
 for i in $(seq 1 90); do s=$($E $P "(()=>{const b=document.querySelector(\"#done-button\");return b?String(b.hasAttribute(\"disabled\")):\"sem\"})()" 2>/dev/null); [ "$s" = false ] && break; sleep 10; done
 $E $P "document.querySelector(\"#done-button\").click(); 1" >/dev/null
-for i in $(seq 1 30); do u=$($E $P "(()=>{const a=document.querySelector(\"ytcp-video-share-dialog a[href*=youtu]\");return a?a.href:\"\"})()" 2>/dev/null); [ -n "$u" ] && break; sleep 3; done
+for i in $(seq 1 60); do u=$($E $P "(()=>{const a=document.querySelector(\"a[href*='youtube.com/shorts/'], a[href*='youtu.be/'], ytcp-video-share-dialog a[href*=youtu]\");return a?a.href:\"\"})()" 2>/dev/null); [ -n "$u" ] && break; sleep 3; done
+# não fecha a aba com envio em andamento (vídeo grande): espera até 60 min
+for i in $(seq 1 360); do $E $P "/Enviando|Uploading|carregad[oa] \\d|\\d+% /.test(document.body.innerText)" 2>/dev/null | grep -q true || break; sleep 10; done
 fecha
 [ -n "$u" ] && echo "POSTADO YT $(basename $1) $u" || echo "INCERTO YT $(basename $1)"

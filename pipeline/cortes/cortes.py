@@ -91,6 +91,8 @@ def main():
     dst = sys.argv[2]
     os.makedirs(dst, exist_ok=True)
     ws = palavras(plano["json3"])
+    troca = {norm(k): v for k, v in plano.get("troca", {}).items()}  # corrige a legenda automática ("" apaga a palavra)
+    ws = [[t, troca.get(norm(w), w)] for t, w in ws if troca.get(norm(w), w)]
     sh = ["set -e", "cd ~/cortes"]
     for c in plano["cortes"]:
         partes = c.get("trechos") or [[c["de"], c["ate"]]]
@@ -106,10 +108,13 @@ def main():
             segs.append((a, b)); t_acc += b - a
         dur = t_acc
         nome = c["nome"]
-        open(f"{dst}/{nome}.ass", "w").write(ass(c["titulo"], chunks, dur, plano["credito"]))
+        mus = c.get("musica", plano.get("musica"))  # trilha por baixo da fala, abaixa sozinha quando há voz
+        cred = plano["credito"] + (" · TRILHA GERADA POR IA" if mus else "")
+        open(f"{dst}/{nome}.ass", "w").write(ass(c["titulo"], chunks, dur, cred))
         fx = c.get("fx", 0.5)
-        cw = "ih*3/4"  # 3:4 do quadro 16:9
-        crop = f"crop={cw}:ih:'max(0,min(iw-{cw},iw*{fx}-{cw}/2))':0"
+        ch = c.get("ch", 1)  # fração da altura usada a partir do topo (<1 tira legenda embutida na fonte)
+        cw = f"ih*{ch}*3/4"  # 3:4 do quadro 16:9
+        crop = f"crop={cw}:ih*{ch}:'max(0,min(iw-{cw},iw*{fx}-{cw}/2))':0"
         n = len(segs)
         fc = ";".join(f"[0:v]trim={a:.3f}:{b:.3f},setpts=PTS-STARTPTS[v{k}];[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS[a{k}]"
                       for k, (a, b) in enumerate(segs))
@@ -117,8 +122,16 @@ def main():
         fc += (f";[vc]{crop},scale=1080:{VH}:flags=lanczos,eq=contrast=1.06:saturation=1.12,"
                f"pad={W}:{H}:0:{VY}:color=0x0B0B0B,subtitles={nome}.ass:fontsdir=fonts"
                f",fade=t=out:st={dur-0.5:.2f}:d=0.5[v]"
-               f";[ac]loudnorm=I=-14:TP=-1.5:LRA=9,afade=t=out:st={dur-0.6:.2f}:d=0.6[a]")
-        sh.append(f"nice -n 10 ffmpeg -v error -y -i {plano['video']} "
+               f";[ac]loudnorm=I=-14:TP=-1.5:LRA=9[voz]")
+        if mus:
+            fc += (f";[voz]asplit[voz1][sc];[1:a]atrim=0:{dur:.2f},asetpts=PTS-STARTPTS,volume={plano.get('musica_vol', 0.30)}[m]"
+                   f";[m][sc]sidechaincompress=threshold=0.02:ratio=10:attack=15:release=500[md]"
+                   f";[voz1][md]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89[mix]")
+            fc += f";[mix]afade=t=out:st={dur-0.6:.2f}:d=0.6[a]"
+        else:
+            fc += f";[voz]afade=t=out:st={dur-0.6:.2f}:d=0.6[a]"
+        entrada_mus = f"-ss {plano.get('musica_ss', 15)} -stream_loop -1 -i {mus} " if mus else ""
+        sh.append(f"nice -n 10 ffmpeg -v error -y -i {plano['video']} {entrada_mus}"
                   f"-filter_complex \"{fc}\" -map '[v]' -map '[a]' -c:v libx264 -preset medium -crf 20 "
                   f"-profile:v high -pix_fmt yuv420p -r 30 -c:a aac -b:a 192k -ar 48000 -movflags +faststart "
                   f"-t {dur:.2f} out/{nome}.mp4 && echo PRONTO {nome} {dur:.1f}s")
