@@ -81,7 +81,7 @@ def blocos(ws, t0, t1):
     for i, c in enumerate(out):
         a = c[0][0]
         b = out[i + 1][0][0] if i + 1 < len(out) else c[-1][0] + 0.8
-        b = min(b, c[-1][0] + 1.2)
+        b = min(b, c[-1][0] + 1.2, t1 - t0)  # não invade o trecho seguinte na emenda
         res.append((a, b, " ".join(w for _, w in c).upper()))
     return res
 
@@ -100,7 +100,8 @@ def main():
         for de, ate in partes:
             i = acha(ws, de)
             j = acha(ws, ate, ws[i][0]) + len(norm(ate).split()) - 1
-            a = ws[i][0] - 0.15
+            a = max(0.0, ws[i][0] - 0.15)
+            # ponytail: limites fora da grade de quadros derivam alguns ms por emenda; alinhar a 1/fps se ficar visível
             b = (ws[j + 1][0] if j + 1 < len(ws) else ws[j][0] + 1) - 0.05
             b = min(b, ws[j][0] + 1.0)
             for x, y, t in blocos(ws, a, b):
