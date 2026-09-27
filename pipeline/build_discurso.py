@@ -44,7 +44,7 @@ TROCAS = {  # "…" = trecho que nem a votação resolveu: a legenda não invent
     "IMG_8455": [("o luva de pedreiro", "o Luva de Pedreiro"), ("ver. Ele não vai fazer", "Ele não vai fazer"),
                  ("com o nome vermelho", "o Comando Vermelho"), ("Minas gereste de solução.", "Minas Gerais tem solução."),
                  ("estão voltando até um", "estão votando até num"), ("minha frente, no Belândia.", "minha frente, em Uberlândia."),
-                 ("Recense o Brasil que importa.", "Vocês são o Brasil que importa."),
+                 ("Recense o Brasil que importa.", "… o Brasil que importa."),
                  ("Ao mesmo tempo, a classe", "Ao mesmo tempo, A classe")],
     "IMG_8454": [("a seguinte notícia no globo.", "a seguinte notícia no Globo:"),
                  ("Um gente, pessoa assaltada na hora da copa -cabeira", "Urgente: pessoa assaltada na orla de Copacabana."),
