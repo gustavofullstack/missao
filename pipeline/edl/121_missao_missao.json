@@ -1,0 +1,15 @@
+{
+ "name": "121_missao_missao",
+ "cover": 12.0,
+ "film": true,
+ "shots": [{"src": "IMG_8460", "in": 64.0, "dur": 15.5}],
+ "audio": "sync",
+ "texts": [
+  {"lines": ["UBERLÂNDIA · 25/09"], "start": 0.0, "end": 15.5, "y": 150, "size": 60, "color": "white",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf", "border": 3, "shadow": 0, "fade": 0.3},
+  {"lines": ["MISSÃO!"], "start": 0.6, "end": 15.5, "y": 1120, "size": 150, "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf", "boxcolor": "0xFCBE26", "pad": 24,
+   "border": 0, "shadow": 0, "fade": 0.04, "anim": "pop", "shake": true}
+ ],
+ "crf": 20
+}

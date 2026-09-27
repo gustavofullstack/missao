@@ -1,0 +1,15 @@
+{
+ "name": "120_e_14_ou_nada",
+ "cover": 6.0,
+ "film": true,
+ "shots": [{"src": "IMG_8458", "in": 70.4, "dur": 15.8}],
+ "audio": "sync",
+ "texts": [
+  {"lines": ["UBERLÂNDIA · 25/09"], "start": 0.0, "end": 15.8, "y": 150, "size": 60, "color": "white",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf", "border": 3, "shadow": 0, "fade": 0.3},
+  {"lines": ["É 14 OU NADA!"], "start": 4.1, "end": 15.8, "y": 1120, "size": 140, "color": "black",
+   "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf", "boxcolor": "0xFCBE26", "pad": 24,
+   "border": 0, "shadow": 0, "fade": 0.04, "anim": "pop", "shake": true}
+ ],
+ "crf": 20
+}

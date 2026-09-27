@@ -1,0 +1,6 @@
+{"name": "123_assim_foi_uberlandia", "cover": 8.0, "film": true,
+ "shots": [{"src": "IMG_8448", "in": 1.0, "dur": 5.0}, {"src": "IMG_8448", "in": 21.0, "dur": 12.0}], "audio": "sync", "xfade": 0.3,
+ "texts": [
+  {"lines": ["PRAÇA RUI BARBOSA"], "start": 0.3, "end": 5.0, "y": 1120, "size": 110, "color": "black", "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf", "boxcolor": "0xFCBE26", "pad": 22, "border": 0, "shadow": 0, "fade": 0.2, "anim": "pop"},
+  {"lines": ["ASSIM FOI", "UBERLÂNDIA"], "start": 5.3, "end": 16.7, "y": 1080, "size": 130, "color": "black", "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf", "boxcolor": "0xFCBE26", "pad": 24, "border": 0, "shadow": 0, "fade": 0.04, "anim": "pop"}
+ ], "crf": 20}

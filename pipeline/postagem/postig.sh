@@ -9,7 +9,8 @@ for i in $(seq 1 20); do [ "$($E $P "!!document.querySelector(\"svg[aria-label=\
 $E $P "document.querySelector(\"svg[aria-label=\\\"New post\\\"]\").closest(\"a,div[role=button],span\").click();1" >/dev/null; sleep 3
 $E $P "(()=>{const p=[...document.querySelectorAll(\"a,div[role=button],span\")].filter(e=>/^(Post|Postar)$/.test(e.innerText)).pop();p&&p.click();return 1})()" >/dev/null; sleep 3
 timeout 120 node cdpd.mjs upload $P "[role=dialog] input[type=file]" "$1" >/dev/null || falha upload
-sleep 8; [ "$(clk $P OK)" = ok ] && sleep 3
+# espera o vídeo carregar: o aviso de Reels (OK) ou o botão de recorte, até 2 min
+for i in $(seq 1 60); do [ "$(clk $P OK)" = ok ] && sleep 3; [ "$($E $P "!!document.querySelector(\"[role=dialog] svg[aria-label=\\\"Select crop\\\"]\")" 2>/dev/null)" = true ] && break; sleep 2; done
 $E $P "document.querySelector(\"[role=dialog] svg[aria-label=\\\"Select crop\\\"]\").closest(\"button,[role=button]\").click();1" >/dev/null || falha crop; sleep 2
 $E $P "(()=>{const s=[...document.querySelectorAll(\"[role=dialog] span\")].find(x=>x.innerText.trim()===\"Original\");(s.closest(\"[role=button],button\")||s).click();return 1})()" >/dev/null || falha original; sleep 2
 [ "$(clk $P Next)" = ok ] || falha next1; sleep 4

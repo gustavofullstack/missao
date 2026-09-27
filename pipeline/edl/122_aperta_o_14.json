@@ -1,0 +1,7 @@
+{"name": "122_aperta_o_14", "cover": 22.5, "film": true,
+ "shots": [{"src": "IMG_8472", "in": 15.0, "dur": 26.0}], "audio": "sync",
+ "texts": [
+  {"lines": ["UBERLÂNDIA · 25/09"], "start": 0.0, "end": 26.0, "y": 150, "size": 60, "color": "white", "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf", "border": 3, "shadow": 0, "fade": 0.3},
+  {"lines": ["FUTURO GLORIOSO"], "start": 0.8, "end": 21.8, "y": 1120, "size": 120, "color": "black", "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf", "boxcolor": "0xFCBE26", "pad": 22, "border": 0, "shadow": 0, "fade": 0.04, "anim": "pop"},
+  {"lines": ["APERTA O 14!"], "start": 22.1, "end": 26.0, "y": 1120, "size": 140, "color": "black", "font": "/usr/share/fonts/truetype/marca/BarlowCondensed-Black.ttf", "boxcolor": "0xFCBE26", "pad": 24, "border": 0, "shadow": 0, "fade": 0.04, "anim": "pop", "shake": true}
+ ], "crf": 20}
