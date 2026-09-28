@@ -98,12 +98,15 @@ def main():
         partes = c.get("trechos") or [[c["de"], c["ate"]]]
         segs, t_acc, chunks = [], 0.0, []
         for de, ate in partes:
-            i = acha(ws, de)
-            j = acha(ws, ate, ws[i][0]) + len(norm(ate).split()) - 1
-            a = max(0.0, ws[i][0] - 0.15)
-            # ponytail: limites fora da grade de quadros derivam alguns ms por emenda; alinhar a 1/fps se ficar visível
-            b = (ws[j + 1][0] if j + 1 < len(ws) else ws[j][0] + 1) - 0.05
-            b = min(b, ws[j][0] + 1.0)
+            if isinstance(de, (int, float)):  # trecho já em segundos (roteiro de discurso)
+                a, b = float(de), float(ate)
+            else:
+                i = acha(ws, de)
+                j = acha(ws, ate, ws[i][0]) + len(norm(ate).split()) - 1
+                a = max(0.0, ws[i][0] - 0.15)
+                # ponytail: limites fora da grade de quadros derivam alguns ms por emenda; alinhar a 1/fps se ficar visível
+                b = (ws[j + 1][0] if j + 1 < len(ws) else ws[j][0] + 1) - 0.05
+                b = min(b, ws[j][0] + 1.0)
             for x, y, t in blocos(ws, a, b):
                 chunks.append((x + t_acc, y + t_acc, t))
             segs.append((a, b)); t_acc += b - a
@@ -115,7 +118,7 @@ def main():
         fx = c.get("fx", 0.5)
         ch = c.get("ch", 1)  # fração da altura usada a partir do topo (<1 tira legenda embutida na fonte)
         cw = f"ih*{ch}*3/4"  # 3:4 do quadro 16:9
-        crop = f"crop={cw}:ih*{ch}:'max(0,min(iw-{cw},iw*{fx}-{cw}/2))':0"
+        crop = c.get("crop") or f"crop={cw}:ih*{ch}:'max(0,min(iw-{cw},iw*{fx}-{cw}/2))':0"  # "crop" próprio p/ fonte já vertical
         n = len(segs)
         fc = ";".join(f"[0:v]trim={a:.3f}:{b:.3f},setpts=PTS-STARTPTS[v{k}];[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS[a{k}]"
                       for k, (a, b) in enumerate(segs))
