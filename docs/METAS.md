@@ -1,6 +1,8 @@
 # Metas, plano e progresso — série de reels do Gustavo (@gusmatrix)
 
-Atualizado em 27/09/2026, 23h BRT. Eleição em 04/10: nada é postado nesse dia.
+Atualizado em 28/09/2026, 17h BRT. Eleição em 04/10: nada é postado nesse dia.
+
+> **28/09, 12:09:** o vaio reiniciou e o Brave "Missão Postagem" perdeu o login de X, Instagram e YouTube. As filas de 29/09 a 03/10 estão agendadas de novo e voltam a subir sozinhas no boot (missao-boot.service), mas só postam depois que o Gustavo fizer login lá outra vez.
 
 ## Objetivo
 
