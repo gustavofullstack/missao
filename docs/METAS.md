@@ -1,6 +1,6 @@
 # Metas, plano e progresso — série de reels do Gustavo (@gusmatrix)
 
-Atualizado em 27/09/2026, 20h BRT. Eleição em 04/10: nada é postado nesse dia.
+Atualizado em 27/09/2026, 23h BRT. Eleição em 04/10: nada é postado nesse dia.
 
 ## Objetivo
 
@@ -10,12 +10,12 @@ Apoio do Gustavo à Missão e ao Renan Santos com conteúdo vertical (9:16) bem 
 
 | Meta | Alvo | Situação |
 |---|---|---|
-| Posts por dia no X | 10 | 10 em 27/09; agenda de 28 a 30/09 montada |
-| Posts por dia no YouTube Shorts | 10 | 9 em 27/09 (mais a íntegra); agenda até 30/09 |
-| Posts por dia no Instagram | 6 (rede mais sensível a volume) | 7 em 27/09; agenda até 30/09 |
+| Posts por dia no X | 10 | 10 em 27/09; agenda de 28/09 a 03/10 fechada (10/dia) |
+| Posts por dia no YouTube Shorts | 10 | 9 em 27/09 (mais a íntegra); 5 rascunhos publicados às 20h16; agenda até 03/10 fechada |
+| Posts por dia no Instagram | 6 (rede mais sensível a volume) | 8 em 27/09; agenda até 03/10 fechada |
 | Posts por dia no TikTok | até 4 | feito pela sessão do MacBook (único navegador logado) |
 | Discurso completo de Uberlândia | 8 partes + íntegra | partes prontas; parte 1 e íntegra no ar; uma parte por dia até 03/10 |
-| Cortes novos por dia | 8 a 10 | 27/09: 40 a 45, 82 a 123 |
+| Cortes novos por dia | 8 a 10 | 27/09: 40 a 45, 82 a 123, 130 a 147, 153 + série BH (6 partes) |
 
 ## Regras que não mudam
 
@@ -42,6 +42,10 @@ Apoio do Gustavo à Missão e ao Renan Santos com conteúdo vertical (9:16) bem 
 - [x] Gritos da multidão das gravações do Gustavo (120 a 123), som original, sem IA
 - [x] Trilha abaixada sob a fala com rótulo "trilha gerada por IA"
 - [ ] TikTok: login feito só no MacBook; a sessão de lá posta
+- [x] Série "discurso completo" de Belo Horizonte (6 partes, 311–316), em 02 e 03/10
+- [ ] Série de Ribeirão Preto (parte 2 da live), roteiro em curso
+- [ ] Documentário "Quem é Renan Santos" (YouTube deu 403; tentar de novo)
+- [ ] Uma peça com IA por dia a partir de 29/09 (Flow), com rótulo
 - [ ] Versões 4K SDR das gravações do Gustavo (120 a 123) para o YouTube
 - [ ] Mais fontes oficiais: Rafa Minato, Guto (2026), Arthur do Val (vídeos de proposta, não debate)
 - [ ] Conferir o Facebook do Gustavo: a parte 1 pode ter saído lá (o IG liga o compartilhamento por padrão; já desligado no script)
@@ -52,3 +56,6 @@ Apoio do Gustavo à Missão e ao Renan Santos com conteúdo vertical (9:16) bem 
 - Entrevista da Jovem Pan: material da emissora e layout de TV que muda.
 - 84, 85, 112: o enquadramento cortava quem falava, ou o tema era sagrado para o povo Paresi.
 - 114: pessoal demais, fraco como post político.
+- 134 e 135 (Guto 2022): o enquadramento mostrava uma pessoa do público enquanto o Guto falava.
+- BH parte 7: era outro orador no palanque; sairia com crédito do Renan.
+- Kim sobre o debate da Globo e o resto do vídeo do Minato: xingamento e acusação a pessoa nomeada o tempo todo.
